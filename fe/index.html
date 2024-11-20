@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TCAT Bus Stops Visualization</title>
+    <style>
+        .stop-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .stop-row {
+            display: flex;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .stop-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .stop {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+        .stop-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-bottom: 5px;
+        }
+
+        .stop-name {
+            font-size: 12px;
+            text-align: center;
+            max-width: 150px;
+        }
+
+        .active {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="stop-container" class="stop-container"></div>
+
+    <script>
+        const stops = []; // Array to store stop data
+        let activeStops = new Set(); // Set to store active stop IDs
+
+        // Parse the stops data
+        function parseStops(stopsData) {
+            const lines = stopsData.split('\n');
+            lines.forEach(line => {
+                const parts = line.split(',');
+                if (parts.length >= 3) {
+                    stops.push({
+                        id: parts[0].trim(),
+                        name: parts[2].replace(/"/g, '').trim()
+                    });
+                }
+            });
+        }
+
+        // Render stops in S pattern
+        function renderStops() {
+            const container = document.getElementById('stop-container');
+            const stopsPerRow = 10;
+            const rows = Math.ceil(stops.length / stopsPerRow);
+
+            for (let i = 0; i < rows; i++) {
+                const rowDiv = document.createElement('div');
+                rowDiv.className = `stop-row ${i % 2 === 1 ? 'stop-row-reverse' : ''}`;
+
+                const startIdx = i * stopsPerRow;
+                const endIdx = Math.min(startIdx + stopsPerRow, stops.length);
+
+                for (let j = startIdx; j < endIdx; j++) {
+                    const stop = stops[j];
+                    const stopDiv = document.createElement('div');
+                    stopDiv.className = 'stop';
+                    stopDiv.innerHTML = `
+                        <div class="stop-circle" id="circle-${stop.id}"></div>
+                        <div class="stop-name">${stop.name}</div>
+                    `;
+                    rowDiv.appendChild(stopDiv);
+                }
+
+                container.appendChild(rowDiv);
+            }
+        }
+
+        // Update active stops based on API response
+        function updateActiveStops() {
+            fetch('http://localhost:5000/api/vehicles/30')
+                .then(response => response.json())
+                .then(data => {
+                    // Reset all stops to inactive
+                    activeStops.clear();
+                    document.querySelectorAll('.stop-circle').forEach(circle => {
+                        circle.classList.remove('active');
+                    });
+
+                    // Mark new active stops
+                    if (data.data) {
+                        data.data.forEach(vehicle => {
+                            const stopId = vehicle.incoming_stop;
+                            const circle = document.getElementById(`circle-${stopId}`);
+                            if (circle) {
+                                circle.classList.add('active');
+                            }
+                        });
+                    }
+                })
+                .catch(error => console.error('Error fetching vehicle data:', error));
+        }
+
+        // Initialize
+        // Replace this with your actual stops data
+        const stopsData = `stop_id,stop_code,stop_name
+        100,100,"Ithaca Commons - Seneca St"
+        103,103,"Tioga @ Court"
+        105,105,"Court @ Linn"
+        // ... rest of your stops data ...`;
+
+        parseStops(stopsData);
+        renderStops();
+
+        // Update active stops every 10 seconds
+        setInterval(updateActiveStops, 10000);
+        updateActiveStops(); // Initial update
+    </script>
+</body>
+
+</html>
