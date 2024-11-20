@@ -1,0 +1,1556 @@
+route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id,wheelchair_accessible,bikes_allowed
+10,12,t2BC-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t2C8-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t2D4-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t2E0-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t2EC-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t320-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t32C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t338-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t344-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t34A-b1F59-slC,"Cornell - Downtown Loop",1,8025,39646_shp,0,0
+10,12,t350-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t384-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t38A-b1F59-slC,"Cornell - Downtown Loop",1,8025,39646_shp,0,0
+10,12,t390-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t39C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t3A2-b1F59-slC,"Cornell - Downtown Loop",1,8025,39646_shp,0,0
+10,12,t3A8-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t3AE-b1F51-slC,"Cornell - Downtown Loop",1,8017,39646_shp,0,0
+10,12,t3B4-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t3BA-b1F59-slC,"Cornell - Downtown Loop",1,8025,39646_shp,0,0
+10,12,t3E8-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t3EE-b1F51-slC,"Cornell - Downtown Loop",1,8017,39646_shp,0,0
+10,12,t3F4-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t3FA-b1F59-slC,"Cornell - Downtown Loop",1,8025,39646_shp,0,0
+10,12,t400-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t406-b1F51-slC,"Cornell - Downtown Loop",1,8017,39646_shp,0,0
+10,12,t40C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t412-b1F59-slC,"Cornell - Downtown Loop",1,8025,39646_shp,0,0
+10,12,t418-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t41E-b1F51-slC,"Cornell - Downtown Loop",1,8017,39646_shp,0,0
+10,12,t44C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t452-b1F59-slC,"Cornell - Downtown Loop",1,8025,39646_shp,0,0
+10,12,t458-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t45E-b1F51-slC,"Cornell - Downtown Loop",1,8017,39646_shp,0,0
+10,12,t464-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t46A-b1F59-slC,"Cornell - Downtown Loop",1,8025,39674_shp,0,0
+10,12,t470-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t476-b1F51-slC,"Cornell - Downtown Loop",1,8017,39674_shp,0,0
+10,12,t47C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t4B0-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t4BC-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t4C8-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t4D4-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t4E0-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t514-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t520-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t52C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t538-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t544-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t578-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t584-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t590-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t59C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t5A8-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t5DC-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t5E8-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t5F4-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t600-b1F53-slC,"Cornell - Downtown Loop",1,8019,39646_shp,0,0
+10,12,t60C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39646_shp,0,0
+10,12,t640-b1F53-slC,"Cornell - Downtown Loop",1,8019,39674_shp,0,0
+10,12,t64C-b1F4F-slC,"Cornell - Downtown Loop",1,8015,39674_shp,0,0
+11,12,t2C4-b1F52-slC,"Ithaca College- South Hill Business Park",1,8018,39623_shp,0,0
+11,12,t2DA-b1F52-slC,"Ithaca College - Ithaca Commons",0,8018,39459_shp,0,0
+11,12,t328-b1F43-slC,"Ithaca College- South Hill Business Park",1,8003,39623_shp,0,0
+11,12,t33E-b1F43-slC,"Ithaca College - Ithaca Commons",0,8003,39459_shp,0,0
+11,12,t38C-b1F52-slC,"Ithaca College- South Hill Business Park",1,8018,39623_shp,0,0
+11,12,t3A2-b1F52-slC,"Ithaca College - Ithaca Commons",0,8018,39459_shp,0,0
+11,12,t3F0-b1F43-slC,"Ithaca College- South Hill Business Park",1,8003,39623_shp,0,0
+11,12,t406-b1F43-slC,"Ithaca College - Ithaca Commons",0,8003,39459_shp,0,0
+11,12,t454-b1F52-slC,"Ithaca College- South Hill Business Park",1,8018,39623_shp,0,0
+11,12,t46A-b1F52-slC,"Ithaca College - Ithaca Commons",0,8018,39459_shp,0,0
+11,12,t4B8-b1F51-slC,"S Hill Biz Park - Lngvw - IC - Coll Cir",1,8017,39580_shp,0,0
+11,12,t4CE-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t51C-b1F52-slC,"S Hill Biz Park - Lngvw - IC - Coll Cir",1,8018,39580_shp,0,0
+11,12,t532-b1F52-slC,"Ithaca College - Ithaca Commons",0,8018,39459_shp,0,0
+11,12,t580-b1F51-slC,"S Hill Biz Park - Lngvw - IC - Coll Cir",1,8017,39580_shp,0,0
+11,12,t596-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t5E4-b1F52-slC,"S Hill Biz Park - Lngvw - IC - Coll Cir",1,8018,39580_shp,0,0
+11,12,t5FA-b1F52-slC,"Ithaca College - Ithaca Commons",0,8018,39459_shp,0,0
+11,12,t648-b1F51-slC,"S Hill Biz Park - Lngvw - IC - Coll Cir",1,8017,39580_shp,0,0
+11,12,t65E-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t6AC-b1F52-slC,"S Hill Biz Park - Lngvw - IC - Coll Cir",1,8018,39580_shp,0,0
+11,12,t6C2-b1F52-slC,"Ithaca College - Ithaca Commons",0,8018,39459_shp,0,0
+11,12,t710-b1F51-slC,"S Hill Biz Park - Lngvw - IC - Coll Cir",1,8017,39580_shp,0,0
+11,12,t726-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t774-b1F52-slC,"S Hill Biz Park - Lngvw - IC - Coll Cir",1,8018,39580_shp,0,0
+11,12,t78A-b1F52-slC,"Ithaca College - Ithaca Commons",0,8018,39459_shp,0,0
+11,12,t7D8-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,t7E8-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t802-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,t839-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t857-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,t866-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t8AC-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,t8BB-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t901-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,t910-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t92E-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,t965-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t983-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,t992-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,t9D8-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,t9E7-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39459_shp,0,0
+11,12,tA2D-b1F51-slC,"Ithaca College - College Circle Apts",1,8017,39462_shp,0,0
+11,12,tA3C-b1F51-slC,"Ithaca College - Ithaca Commons",0,8017,39402_shp,0,0
+11,13,t328-b1B5F-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7007,39628_shp,0,0
+11,13,t33E-b1B5F-slD,"Ithaca College - Ithaca Commons",0,7007,39541_shp,0,0
+11,13,t38C-b1B5E-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7006,39628_shp,0,0
+11,13,t3A2-b1B5E-slD,"Ithaca College - Ithaca Commons",0,7006,39541_shp,0,0
+11,13,t3F0-b1B5F-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7007,39628_shp,0,0
+11,13,t406-b1B5F-slD,"Ithaca College - Ithaca Commons",0,7007,39541_shp,0,0
+11,13,t454-b1B5E-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7006,39628_shp,0,0
+11,13,t46A-b1B5E-slD,"Ithaca College - Ithaca Commons",0,7006,39541_shp,0,0
+11,13,t46A-b1B63-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7011,39628_shp,0,0
+11,13,t47C-b1B63-slD,"Ithaca College - Ithaca Commons",0,7011,39404_shp,0,0
+11,13,t4B8-b1B5F-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7007,39628_shp,0,0
+11,13,t4CE-b1B5F-slD,"Ithaca College - Ithaca Commons",0,7007,39541_shp,0,0
+11,13,t4DD-b1B63-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7011,39628_shp,0,0
+11,13,t517-b1B63-slD,"Ithaca College - Ithaca Commons",0,7011,39404_shp,0,0
+11,13,t51C-b1B5E-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7006,39628_shp,0,0
+11,13,t532-b1B5E-slD,"Ithaca College - Ithaca Commons",0,7006,39541_shp,0,0
+11,13,t578-b1B63-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7011,39628_shp,0,0
+11,13,t580-b1B5F-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7007,39628_shp,0,0
+11,13,t58A-b1B63-slD,"Ithaca College - Ithaca Commons",0,7011,39404_shp,0,0
+11,13,t596-b1B5F-slD,"Ithaca College - Ithaca Commons",0,7007,39541_shp,0,0
+11,13,t5E4-b1B5E-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7006,39628_shp,0,0
+11,13,t5EB-b1B63-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7011,39628_shp,0,0
+11,13,t5FA-b1B5E-slD,"Ithaca College - Ithaca Commons",0,7006,39541_shp,0,0
+11,13,t5FD-b1B63-slD,"Ithaca College - Ithaca Commons",0,7011,39404_shp,0,0
+11,13,t648-b1B5F-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7007,39628_shp,0,0
+11,13,t65E-b1B5F-slD,"Ithaca College - Ithaca Commons",0,7007,39541_shp,0,0
+11,13,t65E-b1B63-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7011,39628_shp,0,0
+11,13,t670-b1B63-slD,"Ithaca College - Ithaca Commons",0,7011,39404_shp,0,0
+11,13,t6AC-b1B5E-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7006,39628_shp,0,0
+11,13,t6C2-b1B5E-slD,"Ithaca College - Ithaca Commons",0,7006,39541_shp,0,0
+11,13,t6D1-b1B63-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7011,39628_shp,0,0
+11,13,t70B-b1B63-slD,"Ithaca College - Ithaca Commons",0,7011,39404_shp,0,0
+11,13,t710-b1B5F-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7007,39628_shp,0,0
+11,13,t726-b1B5F-slD,"Ithaca College - Ithaca Commons",0,7007,39541_shp,0,0
+11,13,t76C-b1B63-slD,"Ithaca Coll-Longview-Coll Circle Apts",1,7011,39628_shp,0,0
+11,13,t774-b1B5E-slD,"Ithaca College - College Circle Apts",1,7006,39544_shp,0,0
+11,13,t77E-b1B63-slD,"Ithaca College - Ithaca Commons",0,7011,39404_shp,0,0
+11,13,t78A-b1B5E-slD,"Ithaca College - Ithaca Commons",0,7006,39541_shp,0,0
+11,15,t328-b2330-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9008,39676_shp,0,0
+11,15,t33E-b2330-slF,"Ithaca College - Ithaca Commons",0,9008,39587_shp,0,0
+11,15,t38C-b232F-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9007,39676_shp,0,0
+11,15,t3A2-b232F-slF,"Ithaca College - Ithaca Commons",0,9007,39587_shp,0,0
+11,15,t3F0-b2330-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9008,39676_shp,0,0
+11,15,t406-b2330-slF,"Ithaca College - Ithaca Commons",0,9008,39587_shp,0,0
+11,15,t454-b232F-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9007,39676_shp,0,0
+11,15,t46A-b232F-slF,"Ithaca College - Ithaca Commons",0,9007,39587_shp,0,0
+11,15,t46A-b2335-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9013,39676_shp,0,0
+11,15,t47C-b2335-slF,"Ithaca College - Ithaca Commons",0,9013,39523_shp,0,0
+11,15,t4B8-b2330-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9008,39676_shp,0,0
+11,15,t4CE-b2330-slF,"Ithaca College - Ithaca Commons",0,9008,39587_shp,0,0
+11,15,t4DD-b2335-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9013,39676_shp,0,0
+11,15,t517-b2335-slF,"Ithaca College - Ithaca Commons",0,9013,39523_shp,0,0
+11,15,t51C-b232F-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9007,39676_shp,0,0
+11,15,t532-b232F-slF,"Ithaca College - Ithaca Commons",0,9007,39587_shp,0,0
+11,15,t578-b2335-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9013,39676_shp,0,0
+11,15,t580-b2330-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9008,39676_shp,0,0
+11,15,t58A-b2335-slF,"Ithaca College - Ithaca Commons",0,9013,39523_shp,0,0
+11,15,t596-b2330-slF,"Ithaca College - Ithaca Commons",0,9008,39587_shp,0,0
+11,15,t5E4-b232F-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9007,39676_shp,0,0
+11,15,t5EB-b2335-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9013,39676_shp,0,0
+11,15,t5FA-b232F-slF,"Ithaca College - Ithaca Commons",0,9007,39587_shp,0,0
+11,15,t5FD-b2335-slF,"Ithaca College - Ithaca Commons",0,9013,39523_shp,0,0
+11,15,t648-b2330-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9008,39676_shp,0,0
+11,15,t65E-b2330-slF,"Ithaca College - Ithaca Commons",0,9008,39587_shp,0,0
+11,15,t65E-b2335-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9013,39676_shp,0,0
+11,15,t670-b2335-slF,"Ithaca College - Ithaca Commons",0,9013,39523_shp,0,0
+11,15,t6AC-b232F-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9007,39676_shp,0,0
+11,15,t6C2-b232F-slF,"Ithaca College - Ithaca Commons",0,9007,39587_shp,0,0
+11,15,t6D1-b2335-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9013,39676_shp,0,0
+11,15,t70B-b2335-slF,"Ithaca College - Ithaca Commons",0,9013,39523_shp,0,0
+11,15,t710-b2330-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9008,39676_shp,0,0
+11,15,t726-b2330-slF,"Ithaca College - Ithaca Commons",0,9008,39587_shp,0,0
+11,15,t76C-b2335-slF,"Ithaca Coll-Longview-Coll Circle Apts",1,9013,39676_shp,0,0
+11,15,t774-b232F-slF,"Ithaca College - College Circle Apts",1,9007,39480_shp,0,0
+11,15,t77E-b2335-slF,"Ithaca College - Ithaca Commons",0,9013,39587_shp,0,0
+11,15,t78A-b232F-slF,"Ithaca College - Ithaca Commons",0,9007,39587_shp,0,0
+11,15,t7D0-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,t7E0-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39587_shp,0,0
+11,15,t7FA-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,t809-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39587_shp,0,0
+11,15,t84F-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,t85E-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39587_shp,0,0
+11,15,t8A4-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,t8B3-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39587_shp,0,0
+11,15,t8D1-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,t908-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39587_shp,0,0
+11,15,t926-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,t935-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39587_shp,0,0
+11,15,t97B-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,t98A-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39587_shp,0,0
+11,15,t9D0-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,t9DF-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39587_shp,0,0
+11,15,t9FD-b233B-slF,"Ithaca College - College Circle Apts",1,9019,39480_shp,0,0
+11,15,tA34-b233B-slF,"Ithaca College - Ithaca Commons",0,9019,39403_shp,0,0
+13,12,t2C6-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39696_shp,0,0
+13,12,t2DF-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t2F3-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t334-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t348-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t34D-b1F45-slC,"Northside - Stewart Park",1,8005,39687_shp,0,0
+13,12,t389-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t39D-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t3B6-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t3F2-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t40B-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t41F-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t460-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t474-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t4B5-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t4C9-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t4E2-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t51E-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t537-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t54B-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t58C-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t5A0-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t5E1-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t5F5-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t60E-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t64A-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t663-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t677-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t6B8-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t6CC-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t70D-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t721-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t73A-b1F55-slC,"Northside - TCAT",1,8021,39692_shp,0,0
+13,12,t776-b1F55-slC,"Cayuga Park Medical Office - Downtown",0,8021,39689_shp,0,0
+13,12,t787-b1F55-slC,"Northside - TCAT",1,8021,39691_shp,0,0
+13,13,t28C-b1B5A-slD,"Northside - Downtown",0,7002,39699_shp,0,0
+13,13,t39A-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39698_shp,0,0
+13,13,t3B1-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t3ED-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t406-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t41A-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t45B-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t46F-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t4B0-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t4C4-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t4DD-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t519-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t532-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t546-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t587-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t59B-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t5DC-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t5F0-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t609-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t645-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t65E-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t672-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t6B3-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t6C7-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t708-b1B62-slD,"Northside - TCAT",1,7010,39688_shp,0,0
+13,13,t71C-b1B62-slD,"Cayuga Park Medical Office - Downtown",0,7010,39693_shp,0,0
+13,13,t730-b1B62-slD,"Northside - TCAT",1,7010,39394_shp,0,0
+13,15,t2BC-b232C-slF,"Northside - Downtown",0,9004,39694_shp,0,0
+13,15,t2E8-b232F-slF,"Northside - Downtown",0,9007,39694_shp,0,0
+13,15,t39A-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39695_shp,0,0
+13,15,t3B1-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t3ED-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t406-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t41A-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t45B-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t46F-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t4B0-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t4C4-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t4DD-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t519-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t532-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t546-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t587-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t59B-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t5DC-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t5F0-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t609-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t645-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t65E-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t672-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t6B3-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t6C7-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+13,15,t708-b2332-slF,"Northside - TCAT",1,9010,39690_shp,0,0
+13,15,t71C-b2332-slF,"Cayuga Park Medical Office - Downtown",0,9010,39697_shp,0,0
+14,12,t25D-b1F43-slC,"Cayuga Medical Center Express",1,8003,39521_shp,0,0
+14,12,t271-b1F43-slC,"Overlook-Linderman-W Village-Downtown",0,8003,39507_shp,0,0
+14,12,t2BC-b1F43-slC,"West Vill - Prof Bldg - Cayuga Med Ctr",1,8003,39625_shp,0,0
+14,12,t2D5-b1F43-slC,"Overlook-Linderman-W Village-Downtown",0,8003,39507_shp,0,0
+14,12,t320-b1F52-slC,"West Vill - Prof Bldg - Cayuga Med Ctr",1,8018,39625_shp,0,0
+14,12,t339-b1F52-slC,"Overlook-Linderman-W Village-Downtown",0,8018,39507_shp,0,0
+14,12,t384-b1F43-slC,"West Vill - Prof Bldg - Cayuga Med Ctr",1,8003,39625_shp,0,0
+14,12,t39F-b1F43-slC,"Overlook-Linderman-W Village-Downtown",0,8003,39507_shp,0,0
+14,12,t3E8-b1F52-slC,"West Vill - Prof Bldg - Cayuga Med Ctr",1,8018,39625_shp,0,0
+14,12,t3F4-b1F4B-slC,"W Hill-Shopping",1,8011,39392_shp,0,0
+14,12,t403-b1F52-slC,"Overlook-Linderman-W Village-Downtown",0,8018,39507_shp,0,0
+14,12,t44C-b1F43-slC,"West Vill - Prof Bldg - Cayuga Med Ctr",1,8003,39625_shp,0,0
+14,12,t467-b1F43-slC,"Overlook-Linderman-W Village-Downtown",0,8003,39507_shp,0,0
+14,12,t4B0-b1F52-slC,"West Vill - Prof Bldg - Cayuga Med Ctr",1,8018,39625_shp,0,0
+14,12,t4CB-b1F52-slC,"Overlook-Linderman-W Village-Downtown",0,8018,39507_shp,0,0
+14,12,t514-b1F51-slC,"West Vill - Prof Bldg - Cayuga Med Ctr",1,8017,39625_shp,0,0
+14,12,t52F-b1F51-slC,"Overlook-Linderman-W Village-Downtown",0,8017,39507_shp,0,0
+14,12,t578-b1F52-slC,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,8018,39546_shp,0,0
+14,12,t59B-b1F52-slC,"West Hill - Downtown",0,8018,39644_shp,0,0
+14,12,t5DC-b1F51-slC,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,8017,39546_shp,0,0
+14,12,t5FF-b1F51-slC,"West Hill - Downtown",0,8017,39644_shp,0,0
+14,12,t640-b1F52-slC,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,8018,39546_shp,0,0
+14,12,t663-b1F52-slC,"West Hill - Downtown",0,8018,39644_shp,0,0
+14,12,t6A4-b1F51-slC,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,8017,39498_shp,0,0
+14,12,t6C7-b1F51-slC,"West Hill - Downtown",0,8017,39644_shp,0,0
+14,12,t708-b1F52-slC,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,8018,39498_shp,0,0
+14,12,t72B-b1F52-slC,"West Hill - Downtown",0,8018,39644_shp,0,0
+14,12,t76C-b1F51-slC,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,8017,39498_shp,0,0
+14,12,t78F-b1F51-slC,"West Hill - Downtown",0,8017,39644_shp,0,0
+14,12,t7D0-b1F52-slC,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,8018,39498_shp,0,0
+14,12,t7F3-b1F52-slC,"West Hill - Downtown",0,8018,39644_shp,0,0
+14,13,t320-b1B5E-slD,"West Hill - Cayuga Medical Center",1,7006,39517_shp,0,0
+14,13,t339-b1B5E-slD,"Overlook-Linderman-W Village-Downtown",0,7006,39638_shp,0,0
+14,13,t3E8-b1B5E-slD,"West Hill - Cayuga Medical Center",1,7006,39517_shp,0,0
+14,13,t403-b1B5E-slD,"Overlook-Linderman-W Village-Downtown",0,7006,39638_shp,0,0
+14,13,t4B0-b1B5E-slD,"West Hill - Cayuga Medical Center",1,7006,39517_shp,0,0
+14,13,t4CB-b1B5E-slD,"Overlook-Linderman-W Village-Downtown",0,7006,39638_shp,0,0
+14,13,t578-b1B5E-slD,"West Hill - Cayuga Medical Center",1,7006,39517_shp,0,0
+14,13,t593-b1B5E-slD,"Overlook-Linderman-W Village-Downtown",0,7006,39638_shp,0,0
+14,13,t640-b1B5E-slD,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,7006,39487_shp,0,0
+14,13,t663-b1B5E-slD,"West Hill - Downtown",0,7006,39634_shp,0,0
+14,13,t708-b1B5E-slD,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,7006,39487_shp,0,0
+14,13,t72B-b1B5E-slD,"West Hill - Downtown",0,7006,39634_shp,0,0
+14,13,t7D0-b1B5E-slD,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,7006,39487_shp,0,0
+14,13,t7F3-b1B5E-slD,"West Hill - Downtown",0,7006,39634_shp,0,0
+14,15,t320-b232F-slF,"West Hill - Cayuga Medical Center",1,9007,39470_shp,0,0
+14,15,t339-b232F-slF,"Overlook-Linderman-W Village-Downtown",0,9007,39510_shp,0,0
+14,15,t3E8-b232F-slF,"West Hill - Cayuga Medical Center",1,9007,39470_shp,0,0
+14,15,t3F4-b2334-slF,"W Hill-Shopping",1,9012,39393_shp,0,0
+14,15,t403-b232F-slF,"Overlook-Linderman-W Village-Downtown",0,9007,39510_shp,0,0
+14,15,t4B0-b232F-slF,"West Hill - Cayuga Medical Center",1,9007,39470_shp,0,0
+14,15,t4CB-b232F-slF,"Overlook-Linderman-W Village-Downtown",0,9007,39510_shp,0,0
+14,15,t578-b232F-slF,"West Hill - Cayuga Medical Center",1,9007,39470_shp,0,0
+14,15,t593-b232F-slF,"Overlook-Linderman-W Village-Downtown",0,9007,39510_shp,0,0
+14,15,t640-b232F-slF,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,9007,39640_shp,0,0
+14,15,t663-b232F-slF,"West Hill - Downtown",0,9007,39493_shp,0,0
+14,15,t708-b232F-slF,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,9007,39640_shp,0,0
+14,15,t72B-b232F-slF,"West Hill - Downtown",0,9007,39493_shp,0,0
+14,15,t7D0-b232F-slF,"W Vill-Linderman-Overlook-Cayuga Med Ctr",1,9007,39640_shp,0,0
+14,15,t7F3-b232F-slF,"West Hill - Downtown",0,9007,39493_shp,0,0
+15,12,t2D1-b1F47-slC,"Titus Towers - Wegmans - Walmart",1,8007,39514_shp,0,0
+15,12,t2E5-b1F47-slC,"Walmart-Titus Towers-Commons@Green St",0,8007,39604_shp,0,0
+15,12,t335-b1F50-slC,"Titus Towers - Wegmans - Walmart",1,8016,39514_shp,0,0
+15,12,t349-b1F50-slC,"Walmart-Titus Towers-Commons@Green St",0,8016,39604_shp,0,0
+15,12,t399-b1F47-slC,"Titus Towers - Wegmans - Walmart",1,8007,39514_shp,0,0
+15,12,t3AD-b1F47-slC,"Walmart-Titus Towers-Commons@Green St",0,8007,39604_shp,0,0
+15,12,t3FD-b1F50-slC,"Titus Towers - Wegmans - Walmart",1,8016,39514_shp,0,0
+15,12,t411-b1F50-slC,"Walmart-Titus Towers-Commons@Green St",0,8016,39604_shp,0,0
+15,12,t461-b1F47-slC,"Titus Towers - Wegmans - Walmart",1,8007,39514_shp,0,0
+15,12,t475-b1F47-slC,"Walmart-Titus Towers-Commons@Green St",0,8007,39604_shp,0,0
+15,12,t4C5-b1F50-slC,"Titus Towers - Wegmans - Walmart",1,8016,39514_shp,0,0
+15,12,t4D9-b1F50-slC,"Walmart-Titus Towers-Commons@Green St",0,8016,39604_shp,0,0
+15,12,t529-b1F47-slC,"Titus Towers - Wegmans - Walmart",1,8007,39514_shp,0,0
+15,12,t53D-b1F47-slC,"Walmart-Titus Towers-Commons@Green St",0,8007,39604_shp,0,0
+15,12,t58D-b1F50-slC,"Titus Towers - Wegmans - Walmart",1,8016,39514_shp,0,0
+15,12,t5A1-b1F50-slC,"Walmart-Titus Towers-Commons@Green St",0,8016,39604_shp,0,0
+15,12,t5F1-b1F47-slC,"Titus Towers - Wegmans - Walmart",1,8007,39514_shp,0,0
+15,12,t605-b1F47-slC,"Walmart-Titus Towers-Commons@Green St",0,8007,39604_shp,0,0
+15,12,t655-b1F50-slC,"Titus Towers - Wegmans - Walmart",1,8016,39514_shp,0,0
+15,12,t669-b1F50-slC,"Walmart-Titus Towers-Commons@Green St",0,8016,39604_shp,0,0
+15,12,t6B9-b1F47-slC,"Titus Towers - Wegmans - Walmart",1,8007,39514_shp,0,0
+15,12,t6CD-b1F47-slC,"Walmart-Titus Towers-Commons@Green St",0,8007,39604_shp,0,0
+15,12,t71D-b1F50-slC,"Titus Towers - Wegmans - Walmart",1,8016,39514_shp,0,0
+15,12,t731-b1F50-slC,"Walmart-Titus Towers-Commons@Green St",0,8016,39604_shp,0,0
+15,12,t781-b1F47-slC,"Titus Towers - Wegmans - Walmart",1,8007,39514_shp,0,0
+15,12,t795-b1F47-slC,"Walmart-Titus Towers-Commons@Green St",0,8007,39604_shp,0,0
+15,13,t335-b1B5C-slD,"Titus Towers - Wegmans - Walmart",1,7004,39635_shp,0,0
+15,13,t349-b1B5C-slD,"Walmart-Titus Towers-Commons@Green St",0,7004,39632_shp,0,0
+15,13,t399-b1B5B-slD,"Titus Towers - Wegmans - Walmart",1,7003,39635_shp,0,0
+15,13,t3AD-b1B5B-slD,"Walmart-Titus Towers-Commons@Green St",0,7003,39632_shp,0,0
+15,13,t3FD-b1B5C-slD,"Titus Towers - Wegmans - Walmart",1,7004,39635_shp,0,0
+15,13,t411-b1B5C-slD,"Walmart-Titus Towers-Commons@Green St",0,7004,39632_shp,0,0
+15,13,t461-b1B5B-slD,"Titus Towers - Wegmans - Walmart",1,7003,39635_shp,0,0
+15,13,t475-b1B5B-slD,"Walmart-Titus Towers-Commons@Green St",0,7003,39632_shp,0,0
+15,13,t4B8-b1B63-slD,"Wegman's - Walmart - Express",1,7011,39417_shp,0,0
+15,13,t4C5-b1B5C-slD,"Titus Towers - Wegmans - Walmart",1,7004,39635_shp,0,0
+15,13,t4C5-b1B63-slD,"Walmart-Titus Towers-Commons@Green St",0,7011,39632_shp,0,0
+15,13,t4D9-b1B5C-slD,"Walmart-Titus Towers-Commons@Green St",0,7004,39632_shp,0,0
+15,13,t529-b1B5B-slD,"Titus Towers - Wegmans - Walmart",1,7003,39635_shp,0,0
+15,13,t52B-b1B63-slD,"Wegman's - Walmart - Express",1,7011,39417_shp,0,0
+15,13,t538-b1B63-slD,"Walmart-Titus Towers-Commons@Green St",0,7011,39632_shp,0,0
+15,13,t53D-b1B5B-slD,"Walmart-Titus Towers-Commons@Green St",0,7003,39632_shp,0,0
+15,13,t58D-b1B5C-slD,"Titus Towers - Wegmans - Walmart",1,7004,39635_shp,0,0
+15,13,t59E-b1B63-slD,"Wegman's - Walmart - Express",1,7011,39417_shp,0,0
+15,13,t5A1-b1B5C-slD,"Walmart-Titus Towers-Commons@Green St",0,7004,39632_shp,0,0
+15,13,t5AB-b1B63-slD,"Walmart-Titus Towers-Commons@Green St",0,7011,39632_shp,0,0
+15,13,t5F1-b1B5B-slD,"Titus Towers - Wegmans - Walmart",1,7003,39635_shp,0,0
+15,13,t605-b1B5B-slD,"Walmart-Titus Towers-Commons@Green St",0,7003,39632_shp,0,0
+15,13,t611-b1B63-slD,"Wegman's - Walmart - Express",1,7011,39417_shp,0,0
+15,13,t646-b1B63-slD,"Walmart-Titus Towers-Commons@Green St",0,7011,39632_shp,0,0
+15,13,t655-b1B5C-slD,"Titus Towers - Wegmans - Walmart",1,7004,39635_shp,0,0
+15,13,t669-b1B5C-slD,"Walmart-Titus Towers-Commons@Green St",0,7004,39632_shp,0,0
+15,13,t6AC-b1B63-slD,"Wegman's - Walmart - Express",1,7011,39417_shp,0,0
+15,13,t6B9-b1B5B-slD,"Titus Towers - Wegmans - Walmart",1,7003,39635_shp,0,0
+15,13,t6B9-b1B63-slD,"Walmart-Titus Towers-Commons@Green St",0,7011,39632_shp,0,0
+15,13,t6CD-b1B5B-slD,"Walmart-Titus Towers-Commons@Green St",0,7003,39632_shp,0,0
+15,13,t71D-b1B5C-slD,"Titus Towers - Wegmans - Walmart",1,7004,39635_shp,0,0
+15,13,t71F-b1B63-slD,"Wegman's - Walmart - Express",1,7011,39417_shp,0,0
+15,13,t72C-b1B63-slD,"Walmart-Titus Towers-Commons@Green St",0,7011,39632_shp,0,0
+15,13,t731-b1B5C-slD,"Walmart-Titus Towers-Commons@Green St",0,7004,39632_shp,0,0
+15,15,t335-b232B-slF,"Titus Towers - Wegmans - Walmart",1,9003,39483_shp,0,0
+15,15,t349-b232B-slF,"Walmart-Titus Towers-Commons@Green St",0,9003,39630_shp,0,0
+15,15,t399-b232A-slF,"Titus Towers - Wegmans - Walmart",1,9002,39483_shp,0,0
+15,15,t3AD-b232A-slF,"Walmart-Titus Towers-Commons@Green St",0,9002,39630_shp,0,0
+15,15,t3FD-b232B-slF,"Titus Towers - Wegmans - Walmart",1,9003,39483_shp,0,0
+15,15,t411-b232B-slF,"Walmart-Titus Towers-Commons@Green St",0,9003,39630_shp,0,0
+15,15,t461-b232A-slF,"Titus Towers - Wegmans - Walmart",1,9002,39483_shp,0,0
+15,15,t475-b232A-slF,"Walmart-Titus Towers-Commons@Green St",0,9002,39630_shp,0,0
+15,15,t4B8-b2335-slF,"Wegman's - Walmart - Express",1,9013,39416_shp,0,0
+15,15,t4C5-b2333-slF,"Titus Towers - Wegmans - Walmart",1,9011,39483_shp,0,0
+15,15,t4C5-b2335-slF,"Walmart-Titus Towers-Commons@Green St",0,9013,39630_shp,0,0
+15,15,t4D9-b2333-slF,"Walmart-Titus Towers-Commons@Green St",0,9011,39630_shp,0,0
+15,15,t529-b232A-slF,"Titus Towers - Wegmans - Walmart",1,9002,39483_shp,0,0
+15,15,t52B-b2335-slF,"Wegman's - Walmart - Express",1,9013,39416_shp,0,0
+15,15,t538-b2335-slF,"Walmart-Titus Towers-Commons@Green St",0,9013,39630_shp,0,0
+15,15,t53D-b232A-slF,"Walmart-Titus Towers-Commons@Green St",0,9002,39630_shp,0,0
+15,15,t58D-b2333-slF,"Titus Towers - Wegmans - Walmart",1,9011,39483_shp,0,0
+15,15,t59E-b2335-slF,"Wegman's - Walmart - Express",1,9013,39416_shp,0,0
+15,15,t5A1-b2333-slF,"Walmart-Titus Towers-Commons@Green St",0,9011,39630_shp,0,0
+15,15,t5AB-b2335-slF,"Walmart-Titus Towers-Commons@Green St",0,9013,39630_shp,0,0
+15,15,t5F1-b232A-slF,"Titus Towers - Wegmans - Walmart",1,9002,39483_shp,0,0
+15,15,t605-b232A-slF,"Walmart-Titus Towers-Commons@Green St",0,9002,39630_shp,0,0
+15,15,t611-b2335-slF,"Wegman's - Walmart - Express",1,9013,39416_shp,0,0
+15,15,t646-b2335-slF,"Walmart-Titus Towers-Commons@Green St",0,9013,39630_shp,0,0
+15,15,t655-b2333-slF,"Titus Towers - Wegmans - Walmart",1,9011,39483_shp,0,0
+15,15,t669-b2333-slF,"Walmart-Titus Towers-Commons@Green St",0,9011,39630_shp,0,0
+15,15,t6AC-b2335-slF,"Wegman's - Walmart - Express",1,9013,39416_shp,0,0
+15,15,t6B9-b232A-slF,"Titus Towers - Wegmans - Walmart",1,9002,39483_shp,0,0
+15,15,t6B9-b2335-slF,"Walmart-Titus Towers-Commons@Green St",0,9013,39630_shp,0,0
+15,15,t6CD-b232A-slF,"Walmart-Titus Towers-Commons@Green St",0,9002,39630_shp,0,0
+15,15,t71D-b2333-slF,"Titus Towers - Wegmans - Walmart",1,9011,39483_shp,0,0
+15,15,t71F-b2335-slF,"Wegman's - Walmart - Express",1,9013,39416_shp,0,0
+15,15,t72C-b2335-slF,"Walmart-Titus Towers-Commons@Green St",0,9013,39630_shp,0,0
+15,15,t731-b2333-slF,"Walmart-Titus Towers-Commons@Green St",0,9011,39630_shp,0,0
+15,15,t781-b232A-slF,"Titus Towers - Wegmans - Walmart",1,9002,39483_shp,0,0
+15,15,t795-b232A-slF,"Walmart-Titus Towers-Commons@Green St",0,9002,39630_shp,0,0
+15,15,t7E5-b2333-slF,"Titus Towers - Wegmans - Walmart",1,9011,39483_shp,0,0
+15,15,t7F9-b2333-slF,"Walmart-Titus Towers-Commons@Green St",0,9011,39630_shp,0,0
+17,12,t226-b1F42-slC,"Downtown",0,8002,39682_shp,0,0
+17,12,t22B-b1F43-slC,"Downtown",0,8003,39682_shp,0,0
+17,12,t262-b1F44-slC,"Downtown",0,8004,39682_shp,0,0
+17,12,t26A-b1F46-slC,"Downtown",0,8006,39682_shp,0,0
+17,12,t26A-b1F48-slC,"Downtown",0,8008,39682_shp,0,0
+17,12,t26C-b1F45-slC,"Downtown",0,8005,39682_shp,0,0
+17,12,t273-b1F49-slC,"Downtown",0,8009,39682_shp,0,0
+17,12,t274-b1F4A-slC,"Downtown",0,8010,39682_shp,0,0
+17,12,t278-b1F4B-slC,"Downtown",0,8011,39682_shp,0,0
+17,12,t285-b1F4F-slC,"Downtown",0,8015,39571_shp,0,0
+17,12,t288-b1F50-slC,"Downtown",0,8016,39682_shp,0,0
+17,12,t290-b1F52-slC,"Downtown",0,8018,39682_shp,0,0
+17,12,t291-b1F53-slC,"Downtown",0,8019,39571_shp,0,0
+17,12,t332-b1F58-slC,"Downtown",0,8024,39682_shp,0,0
+17,12,t33B-b1F59-slC,"Downtown",0,8025,39571_shp,0,0
+17,12,t421-b1F49-slC,"Downtown - TCAT",1,8009,39499_shp,0,0
+17,12,t47A-b1F59-slC,"Downtown - TCAT",1,8025,39542_shp,0,0
+17,12,t47F-b1F54-slC,"Downtown - TCAT",1,8020,39499_shp,0,0
+17,12,t585-b1F5A-slC,"Downtown",0,8026,39682_shp,0,0
+17,12,t585-b1F5B-slC,"Downtown",0,8027,39682_shp,0,0
+17,12,t64C-b1F5C-slC,"Downtown - Cornell",0,8028,39558_shp,0,0
+17,12,t6C6-b1F45-slC,"Downtown - TCAT",1,8005,39499_shp,0,0
+17,12,t6C8-b1F53-slC,"Downtown - TCAT",1,8019,39542_shp,0,0
+17,12,t6C9-b1F43-slC,"Downtown - TCAT",1,8003,39542_shp,0,0
+17,12,t6D5-b1F57-slC,"Downtown - TCAT",1,8023,39499_shp,0,0
+17,12,t6DD-b1F4F-slC,"Downtown - TCAT",1,8015,39542_shp,0,0
+17,12,t77C-b1F4C-slC,"Downtown - TCAT",1,8012,39499_shp,0,0
+17,12,t7A4-b1F4D-slC,"Downtown - TCAT",1,8013,39542_shp,0,0
+17,12,t7E4-b1F4B-slC,"Downtown - TCAT",1,8011,39542_shp,0,0
+17,12,t7FE-b1F48-slC,"Downtown - TCAT",1,8008,39542_shp,0,0
+17,12,t83C-b1F44-slC,"Downtown - TCAT",1,8004,39608_shp,0,0
+17,12,t986-b1F46-slC,"Downtown - TCAT",1,8006,39542_shp,0,0
+17,12,tA3E-b1F5B-slC,"Downtown - TCAT",1,8027,39542_shp,0,0
+17,12,tA49-b1F51-slC,"Downtown - TCAT",1,8017,39542_shp,0,0
+17,12,tA52-b1F58-slC,"Downtown - TCAT",1,8024,39542_shp,0,0
+17,13,t28A-b1B59-slD,"Downtown",0,7001,39481_shp,0,0
+17,13,t292-b1B5B-slD,"Downtown",0,7003,39461_shp,0,0
+17,13,t292-b1B5C-slD,"Downtown",0,7004,39481_shp,0,0
+17,13,t2D4-b1B5D-slD,"Downtown",0,7005,39481_shp,0,0
+17,13,t2EE-b1B5E-slD,"Downtown",0,7006,39481_shp,0,0
+17,13,t2F6-b1B5F-slD,"Downtown",0,7007,39481_shp,0,0
+17,13,t348-b1B61-slD,"Downtown",0,7009,39481_shp,0,0
+17,13,t46D-b1B64-slD,"Downtown",0,7012,39481_shp,0,0
+17,13,t4B3-b1B65-slD,"Downtown",0,7013,39481_shp,0,0
+17,13,t4C2-b1B66-slD,"Downtown",0,7014,39481_shp,0,0
+17,13,t4D1-b1B67-slD,"Downtown",0,7015,39481_shp,0,0
+17,13,t73F-b1B64-slD,"Downtown - TCAT",1,7012,39556_shp,0,0
+17,13,t77E-b1B5B-slD,"Downtown - TCAT",1,7003,39556_shp,0,0
+17,13,t77E-b1B66-slD,"Downtown - TCAT",1,7014,39491_shp,0,0
+17,13,t780-b1B65-slD,"Downtown - TCAT",1,7013,39556_shp,0,0
+17,13,t785-b1B61-slD,"Downtown - TCAT",1,7009,39556_shp,0,0
+17,13,t790-b1B63-slD,"Downtown - TCAT",1,7011,39556_shp,0,0
+17,13,t79E-b1B5F-slD,"Downtown - TCAT",1,7007,39556_shp,0,0
+17,13,t7E2-b1B5D-slD,"Downtown - TCAT",1,7005,39556_shp,0,0
+17,13,t866-b1B5E-slD,"Downtown - TCAT",1,7006,39556_shp,0,0
+17,15,t28A-b2329-slF,"Downtown",0,9001,39599_shp,0,0
+17,15,t292-b232A-slF,"Downtown",0,9002,39536_shp,0,0
+17,15,t292-b232B-slF,"Downtown",0,9003,39599_shp,0,0
+17,15,t2C1-b232D-slF,"Downtown",0,9005,39599_shp,0,0
+17,15,t2D4-b232E-slF,"Downtown",0,9006,39599_shp,0,0
+17,15,t2F6-b2330-slF,"Downtown",0,9008,39599_shp,0,0
+17,15,t390-b232D-slF,"Downtown - TCAT",1,9005,39631_shp,0,0
+17,15,t3EA-b2334-slF,"Downtown",0,9012,39599_shp,0,0
+17,15,t41A-b2333-slF,"Downtown",0,9011,39599_shp,0,0
+17,15,t45E-b2335-slF,"Downtown",0,9013,39599_shp,0,0
+17,15,t46D-b2336-slF,"Downtown",0,9014,39599_shp,0,0
+17,15,t4B3-b2337-slF,"Downtown",0,9015,39599_shp,0,0
+17,15,t4C2-b2338-slF,"Downtown",0,9016,39599_shp,0,0
+17,15,t6CA-b233B-slF,"Downtown",0,9019,39599_shp,0,0
+17,15,t714-b2337-slF,"Downtown - TCAT",1,9015,39482_shp,0,0
+17,15,t721-b2338-slF,"Downtown - TCAT",1,9016,39482_shp,0,0
+17,15,t788-b2332-slF,"Downtown - TCAT",1,9010,39631_shp,0,0
+17,15,t7F2-b233A-slF,"Downtown - TCAT",1,9018,39631_shp,0,0
+17,15,t834-b232F-slF,"Downtown - TCAT",1,9007,39631_shp,0,0
+17,15,t9D3-b2330-slF,"Downtown - TCAT",1,9008,39482_shp,0,0
+17,15,tA3E-b2335-slF,"Downtown - TCAT",1,9013,39482_shp,0,0
+17,15,tA41-b233B-slF,"Downtown - TCAT",1,9019,39482_shp,0,0
+17,15,tA52-b2336-slF,"Downtown - TCAT",1,9014,39482_shp,0,0
+20,12,t280-b1F4A-slC,"Enfield",1,8010,39567_shp,0,0
+20,12,t2C1-b1F4A-slC,"Downtown - Cornell",0,8010,39652_shp,0,0
+20,12,t3F2-b1F49-slC,"Enfield",1,8009,39567_shp,0,0
+20,12,t40B-b1F49-slC,"Ithaca Commons",0,8009,39463_shp,0,0
+20,12,t664-b1F5C-slC,"Downtown - Enfield",1,8028,39606_shp,0,0
+20,12,t6B3-b1F5C-slC,"Ithaca Commons",0,8028,39463_shp,0,0
+20,15,t332-b232D-slF,"Enfield",1,9005,39466_shp,0,0
+20,15,t352-b232D-slF,"Ithaca Commons",0,9005,39456_shp,0,0
+20,15,t47E-b232C-slF,"Enfield",1,9004,39466_shp,0,0
+20,15,t4BF-b232C-slF,"Ithaca Commons",0,9004,39456_shp,0,0
+20,15,t735-b2332-slF,"Enfield",1,9010,39466_shp,0,0
+20,15,t774-b2332-slF,"Ithaca Commons",0,9010,39456_shp,0,0
+21,12,t26C-b1F44-slC,"Trumansburg",1,8004,39619_shp,0,0
+21,12,t28A-b1F44-slC,"Downtown - Cornell",0,8004,39582_shp,0,0
+21,12,t2E9-b1F49-slC,"Trumansburg",1,8009,39654_shp,0,0
+21,12,t32F-b1F49-slC,"Downtown - Cornell",0,8009,39582_shp,0,0
+21,12,t3F7-b1F57-slC,"Trumansburg",1,8023,39619_shp,0,0
+21,12,t41A-b1F57-slC,"Downtown",0,8023,39589_shp,0,0
+21,12,t591-b1F5B-slC,"Downtown-Trumansburg",1,8027,39658_shp,0,0
+21,12,t5B1-b1F5B-slC,"Downtown",0,8027,39677_shp,0,0
+21,12,t663-b1F57-slC,"Downtown-Trumansburg",1,8023,39464_shp,0,0
+21,12,t6BC-b1F57-slC,"Downtown",0,8023,39677_shp,0,0
+21,12,t6CA-b1F4B-slC,"Downtown-Trumansburg",1,8011,39464_shp,0,0
+21,12,t720-b1F4B-slC,"Downtown",0,8011,39677_shp,0,0
+21,13,t352-b1B61-slD,"Downtown-Trumansburg",1,7009,39492_shp,0,0
+21,13,t39B-b1B61-slD,"Downtown",0,7009,39540_shp,0,0
+21,13,t54B-b1B61-slD,"Downtown-Trumansburg",1,7009,39492_shp,0,0
+21,13,t591-b1B61-slD,"Downtown",0,7009,39540_shp,0,0
+21,13,t66D-b1B61-slD,"Downtown-Trumansburg",1,7009,39492_shp,0,0
+21,13,t6B6-b1B61-slD,"Downtown",0,7009,39440_shp,0,0
+21,15,t2CB-b232D-slF,"Trumansburg",1,9005,39669_shp,0,0
+21,15,t2E9-b232D-slF,"Downtown",0,9005,39486_shp,0,0
+21,15,t410-b232C-slF,"Downtown-Trumansburg",1,9004,39597_shp,0,0
+21,15,t458-b232C-slF,"Downtown",0,9004,39486_shp,0,0
+21,15,t672-b233A-slF,"Downtown-Trumansburg",1,9018,39597_shp,0,0
+21,15,t6BD-b233A-slF,"Downtown",0,9018,39615_shp,0,0
+21,15,t794-b233A-slF,"Downtown-Trumansburg",1,9018,39597_shp,0,0
+21,15,t7DA-b233A-slF,"Downtown",0,9018,39615_shp,0,0
+30,12,t258-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39572_shp,0,0
+30,12,t276-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t276-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39572_shp,0,0
+30,12,t28B-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t2BC-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t2D1-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t2DA-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t2EE-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39572_shp,0,0
+30,12,t2EF-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t325-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t32F-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39572_shp,0,0
+30,12,t334-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t33B-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t33E-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39572_shp,0,0
+30,12,t343-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t34A-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t352-b1F4C-slC,"Cornell - Downtown",0,8012,39668_shp,0,0
+30,12,t359-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t389-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t390-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39477_shp,0,0
+30,12,t398-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t39F-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39477_shp,0,0
+30,12,t3A7-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t3AE-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t3B6-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t3BD-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t3ED-b1F4C-slC,"Cornell - Downtown",0,8012,39668_shp,0,0
+30,12,t3F4-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t3FC-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t403-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39477_shp,0,0
+30,12,t40B-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t412-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39477_shp,0,0
+30,12,t41A-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t421-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t451-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t458-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t460-b1F4C-slC,"Cornell - Downtown",0,8012,39668_shp,0,0
+30,12,t467-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t46F-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t476-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39477_shp,0,0
+30,12,t47E-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t485-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39477_shp,0,0
+30,12,t4B5-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t4BC-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t4C4-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t4CB-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t4D3-b1F4C-slC,"Cornell - Downtown",0,8012,39668_shp,0,0
+30,12,t4DA-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t4E2-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t4E9-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39477_shp,0,0
+30,12,t519-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t520-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39477_shp,0,0
+30,12,t528-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t52F-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t537-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t53E-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t546-b1F4C-slC,"Cornell - Downtown",0,8012,39668_shp,0,0
+30,12,t54D-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t57D-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t584-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39477_shp,0,0
+30,12,t58C-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t593-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39477_shp,0,0
+30,12,t59B-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t5A2-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t5AA-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t5B1-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t5E1-b1F4C-slC,"Cornell - Downtown",0,8012,39668_shp,0,0
+30,12,t5E8-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t5F0-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t5F7-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39477_shp,0,0
+30,12,t5FF-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t606-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39477_shp,0,0
+30,12,t60E-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t615-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t645-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t64C-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t654-b1F4C-slC,"Cornell - Downtown",0,8012,39668_shp,0,0
+30,12,t65B-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t663-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t66A-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39477_shp,0,0
+30,12,t672-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t679-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39477_shp,0,0
+30,12,t6A9-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t6B0-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t6B8-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t6BF-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t6C7-b1F4C-slC,"Cornell - Downtown",0,8012,39668_shp,0,0
+30,12,t6CE-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t6D6-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t6DD-b1F4C-slC,"Cornell - Mall via Pleasant Grove",1,8012,39477_shp,0,0
+30,12,t70D-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t714-b1F58-slC,"Cornell - Mall via Pleasant Grove",1,8024,39477_shp,0,0
+30,12,t71C-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t723-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t72B-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t732-b1F4D-slC,"Cornell - Mall via Pleasant Grove",1,8013,39477_shp,0,0
+30,12,t73A-b1F4C-slC,"Cornell - Downtown",0,8012,39515_shp,0,0
+30,12,t771-b1F58-slC,"Cornell - Downtown",0,8024,39668_shp,0,0
+30,12,t777-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39477_shp,0,0
+30,12,t780-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t78F-b1F4D-slC,"Cornell - Downtown",0,8013,39668_shp,0,0
+30,12,t795-b1F48-slC,"Cornell - Mall via Pleasant Grove",1,8008,39477_shp,0,0
+30,12,t7A3-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t7E0-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39433_shp,0,0
+30,12,t7E9-b1F48-slC,"Cornell - Downtown",0,8008,39668_shp,0,0
+30,12,t834-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t849-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39433_shp,0,0
+30,12,t898-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t8AD-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39433_shp,0,0
+30,12,t8FC-b1F42-slC,"Cornell - Downtown",0,8002,39668_shp,0,0
+30,12,t911-b1F42-slC,"Cornell - Mall via Pleasant Grove",1,8002,39433_shp,0,0
+30,13,t2BC-b1B59-slD,"Cornell - Mall via Pleasant Grove",1,7001,39577_shp,0,0
+30,13,t2DA-b1B59-slD,"Cornell - Downtown",0,7001,39661_shp,0,0
+30,13,t2DE-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39476_shp,0,0
+30,13,t2EE-b1B59-slD,"Cornell - Mall via Pleasant Grove",1,7001,39605_shp,0,0
+30,13,t324-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t338-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39605_shp,0,0
+30,13,t346-b1B59-slD,"Cornell - Downtown",0,7001,39661_shp,0,0
+30,13,t35A-b1B59-slD,"Cornell - Mall via Pleasant Grove",1,7001,39605_shp,0,0
+30,13,t390-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t3A4-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39605_shp,0,0
+30,13,t3B2-b1B59-slD,"Cornell - Downtown",0,7001,39661_shp,0,0
+30,13,t3EE-b1B59-slD,"Cornell - Mall via Pleasant Grove",1,7001,39605_shp,0,0
+30,13,t3FC-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t410-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39605_shp,0,0
+30,13,t41E-b1B59-slD,"Cornell - Downtown",0,7001,39661_shp,0,0
+30,13,t45A-b1B59-slD,"Cornell - Mall via Pleasant Grove",1,7001,39605_shp,0,0
+30,13,t468-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t479-b1B64-slD,"Cornell - Mall via Pleasant Grove",1,7012,39476_shp,0,0
+30,13,t47C-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39605_shp,0,0
+30,13,t4B5-b1B59-slD,"Cornell - Downtown",0,7001,39575_shp,0,0
+30,13,t4BF-b1B65-slD,"Cornell - Mall via Pleasant Grove",1,7013,39476_shp,0,0
+30,13,t4C4-b1B64-slD,"Cornell - Downtown",0,7012,39661_shp,0,0
+30,13,t4CE-b1B66-slD,"Cornell - Mall via Pleasant Grove",1,7014,39476_shp,0,0
+30,13,t4D3-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t4DC-b1B64-slD,"Cornell - Mall via Pleasant Grove",1,7012,39605_shp,0,0
+30,13,t4DD-b1B67-slD,"Cornell - Mall via Pleasant Grove",1,7015,39476_shp,0,0
+30,13,t4E2-b1B65-slD,"Cornell - Downtown",0,7013,39661_shp,0,0
+30,13,t4EB-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39605_shp,0,0
+30,13,t519-b1B66-slD,"Cornell - Downtown",0,7014,39661_shp,0,0
+30,13,t522-b1B65-slD,"Cornell - Mall via Pleasant Grove",1,7013,39605_shp,0,0
+30,13,t528-b1B67-slD,"Cornell - Downtown",0,7015,39661_shp,0,0
+30,13,t531-b1B66-slD,"Cornell - Mall via Pleasant Grove",1,7014,39605_shp,0,0
+30,13,t537-b1B64-slD,"Cornell - Downtown",0,7012,39661_shp,0,0
+30,13,t540-b1B67-slD,"Cornell - Mall via Pleasant Grove",1,7015,39605_shp,0,0
+30,13,t546-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t54F-b1B64-slD,"Cornell - Mall via Pleasant Grove",1,7012,39605_shp,0,0
+30,13,t57D-b1B65-slD,"Cornell - Downtown",0,7013,39661_shp,0,0
+30,13,t586-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39605_shp,0,0
+30,13,t58C-b1B66-slD,"Cornell - Downtown",0,7014,39661_shp,0,0
+30,13,t595-b1B65-slD,"Cornell - Mall via Pleasant Grove",1,7013,39605_shp,0,0
+30,13,t59B-b1B67-slD,"Cornell - Downtown",0,7015,39661_shp,0,0
+30,13,t5A4-b1B66-slD,"Cornell - Mall via Pleasant Grove",1,7014,39605_shp,0,0
+30,13,t5AA-b1B64-slD,"Cornell - Downtown",0,7012,39661_shp,0,0
+30,13,t5B3-b1B67-slD,"Cornell - Mall via Pleasant Grove",1,7015,39605_shp,0,0
+30,13,t5E1-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t5EA-b1B64-slD,"Cornell - Mall via Pleasant Grove",1,7012,39605_shp,0,0
+30,13,t5F0-b1B65-slD,"Cornell - Downtown",0,7013,39661_shp,0,0
+30,13,t5F9-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39605_shp,0,0
+30,13,t5FF-b1B66-slD,"Cornell - Downtown",0,7014,39661_shp,0,0
+30,13,t608-b1B65-slD,"Cornell - Mall via Pleasant Grove",1,7013,39605_shp,0,0
+30,13,t60E-b1B67-slD,"Cornell - Downtown",0,7015,39661_shp,0,0
+30,13,t617-b1B66-slD,"Cornell - Mall via Pleasant Grove",1,7014,39605_shp,0,0
+30,13,t645-b1B64-slD,"Cornell - Downtown",0,7012,39661_shp,0,0
+30,13,t64E-b1B67-slD,"Cornell - Mall via Pleasant Grove",1,7015,39474_shp,0,0
+30,13,t654-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t65D-b1B64-slD,"Cornell - Mall via Pleasant Grove",1,7012,39474_shp,0,0
+30,13,t663-b1B65-slD,"Cornell - Downtown",0,7013,39661_shp,0,0
+30,13,t66C-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39474_shp,0,0
+30,13,t672-b1B66-slD,"Cornell - Downtown",0,7014,39661_shp,0,0
+30,13,t67B-b1B65-slD,"Cornell - Mall via Pleasant Grove",1,7013,39474_shp,0,0
+30,13,t6A9-b1B67-slD,"Cornell - Downtown",0,7015,39661_shp,0,0
+30,13,t6B2-b1B66-slD,"Cornell - Mall via Pleasant Grove",1,7014,39474_shp,0,0
+30,13,t6B8-b1B64-slD,"Cornell - Downtown",0,7012,39661_shp,0,0
+30,13,t6C1-b1B67-slD,"Cornell - Mall via Pleasant Grove",1,7015,39474_shp,0,0
+30,13,t6C7-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t6D0-b1B64-slD,"Cornell - Mall via Pleasant Grove",1,7012,39474_shp,0,0
+30,13,t6D6-b1B65-slD,"Cornell - Downtown",0,7013,39575_shp,0,0
+30,13,t6DF-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39474_shp,0,0
+30,13,t70D-b1B66-slD,"Cornell - Downtown",0,7014,39575_shp,0,0
+30,13,t71C-b1B67-slD,"Cornell - Downtown",0,7015,39661_shp,0,0
+30,13,t72B-b1B64-slD,"Cornell - Downtown",0,7012,39661_shp,0,0
+30,13,t730-b1B67-slD,"Cornell - Mall via Pleasant Grove",1,7015,39474_shp,0,0
+30,13,t73A-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,13,t776-b1B5D-slD,"Cornell - Mall via Pleasant Grove",1,7005,39474_shp,0,0
+30,13,t784-b1B67-slD,"Cornell - Downtown",0,7015,39661_shp,0,0
+30,13,t798-b1B67-slD,"Cornell - Mall via Pleasant Grove",1,7015,39474_shp,0,0
+30,13,t7A6-b1B5D-slD,"Cornell - Downtown",0,7005,39661_shp,0,0
+30,15,t2BC-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39683_shp,0,0
+30,15,t2DA-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t2DE-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39670_shp,0,0
+30,15,t2EE-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39479_shp,0,0
+30,15,t324-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t338-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39479_shp,0,0
+30,15,t346-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t35A-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39479_shp,0,0
+30,15,t390-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t3A4-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39479_shp,0,0
+30,15,t3B2-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t3EE-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39479_shp,0,0
+30,15,t3FC-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t410-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39479_shp,0,0
+30,15,t41E-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t45A-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39479_shp,0,0
+30,15,t468-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t479-b2336-slF,"Cornell - Mall via Pleasant Grove",1,9014,39670_shp,0,0
+30,15,t47C-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39479_shp,0,0
+30,15,t4B5-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t4BF-b2337-slF,"Cornell - Mall via Pleasant Grove",1,9015,39670_shp,0,0
+30,15,t4C4-b2336-slF,"Cornell - Downtown",0,9014,39531_shp,0,0
+30,15,t4CD-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39479_shp,0,0
+30,15,t4CE-b2338-slF,"Cornell - Mall via Pleasant Grove",1,9016,39670_shp,0,0
+30,15,t4D3-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t4DC-b2336-slF,"Cornell - Mall via Pleasant Grove",1,9014,39479_shp,0,0
+30,15,t4E2-b2337-slF,"Cornell - Downtown",0,9015,39531_shp,0,0
+30,15,t4EB-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39479_shp,0,0
+30,15,t519-b2338-slF,"Cornell - Downtown",0,9016,39531_shp,0,0
+30,15,t522-b2337-slF,"Cornell - Mall via Pleasant Grove",1,9015,39479_shp,0,0
+30,15,t528-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t531-b2338-slF,"Cornell - Mall via Pleasant Grove",1,9016,39479_shp,0,0
+30,15,t537-b2336-slF,"Cornell - Downtown",0,9014,39531_shp,0,0
+30,15,t540-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39479_shp,0,0
+30,15,t546-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t54F-b2336-slF,"Cornell - Mall via Pleasant Grove",1,9014,39479_shp,0,0
+30,15,t57D-b2337-slF,"Cornell - Downtown",0,9015,39531_shp,0,0
+30,15,t586-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39479_shp,0,0
+30,15,t58C-b2338-slF,"Cornell - Downtown",0,9016,39531_shp,0,0
+30,15,t595-b2337-slF,"Cornell - Mall via Pleasant Grove",1,9015,39479_shp,0,0
+30,15,t59B-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t5A4-b2338-slF,"Cornell - Mall via Pleasant Grove",1,9016,39479_shp,0,0
+30,15,t5AA-b2336-slF,"Cornell - Downtown",0,9014,39531_shp,0,0
+30,15,t5B3-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39479_shp,0,0
+30,15,t5E1-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t5EA-b2336-slF,"Cornell - Mall via Pleasant Grove",1,9014,39479_shp,0,0
+30,15,t5F0-b2337-slF,"Cornell - Downtown",0,9015,39531_shp,0,0
+30,15,t5F9-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39479_shp,0,0
+30,15,t5FF-b2338-slF,"Cornell - Downtown",0,9016,39531_shp,0,0
+30,15,t608-b2337-slF,"Cornell - Mall via Pleasant Grove",1,9015,39479_shp,0,0
+30,15,t60E-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t617-b2338-slF,"Cornell - Mall via Pleasant Grove",1,9016,39479_shp,0,0
+30,15,t645-b2336-slF,"Cornell - Downtown",0,9014,39531_shp,0,0
+30,15,t64E-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39566_shp,0,0
+30,15,t654-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t65D-b2336-slF,"Cornell - Mall via Pleasant Grove",1,9014,39566_shp,0,0
+30,15,t663-b2337-slF,"Cornell - Downtown",0,9015,39531_shp,0,0
+30,15,t66C-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39566_shp,0,0
+30,15,t672-b2338-slF,"Cornell - Downtown",0,9016,39531_shp,0,0
+30,15,t67B-b2337-slF,"Cornell - Mall via Pleasant Grove",1,9015,39566_shp,0,0
+30,15,t6A9-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t6B2-b2338-slF,"Cornell - Mall via Pleasant Grove",1,9016,39566_shp,0,0
+30,15,t6B8-b2336-slF,"Cornell - Downtown",0,9014,39531_shp,0,0
+30,15,t6C1-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39566_shp,0,0
+30,15,t6C7-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t6D0-b2336-slF,"Cornell - Mall via Pleasant Grove",1,9014,39566_shp,0,0
+30,15,t6D6-b2337-slF,"Cornell - Downtown",0,9015,39531_shp,0,0
+30,15,t6DF-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39566_shp,0,0
+30,15,t70D-b2338-slF,"Cornell - Downtown",0,9016,39531_shp,0,0
+30,15,t71C-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t72B-b2336-slF,"Cornell - Downtown",0,9014,39622_shp,0,0
+30,15,t730-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39566_shp,0,0
+30,15,t73A-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t776-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39566_shp,0,0
+30,15,t784-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t798-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39566_shp,0,0
+30,15,t7A6-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t7E2-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39566_shp,0,0
+30,15,t7F0-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t804-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39566_shp,0,0
+30,15,t83A-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t84E-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39566_shp,0,0
+30,15,t85C-b2329-slF,"Cornell - Downtown",0,9001,39531_shp,0,0
+30,15,t898-b2329-slF,"Cornell - Mall via Pleasant Grove",1,9001,39566_shp,0,0
+30,15,t8A6-b232E-slF,"Cornell - Downtown",0,9006,39531_shp,0,0
+30,15,t8BA-b232E-slF,"Cornell - Mall via Pleasant Grove",1,9006,39566_shp,0,0
+31,12,t2C1-b1F4E-slC,"NE Ithaca - Winston Court - Central Camp",0,8014,39458_shp,0,0
+31,12,t2E9-b1F4E-slC,"NE Ithaca - Etna",1,8014,39603_shp,0,0
+31,12,t327-b1F4E-slC,"NE Ithaca - Winston Court - Central Camp",0,8014,39458_shp,0,0
+31,12,t357-b1F4E-slC,"NE Ithaca - Etna",1,8014,39603_shp,0,0
+31,12,t395-b1F4E-slC,"NE Ithaca - Winston Court - Central Camp",0,8014,39458_shp,0,0
+31,12,t3E8-b1F4E-slC,"NE Ithaca - Etna",1,8014,39613_shp,0,0
+31,12,t403-b1F4E-slC,"NE Ithaca - Winston Court - Central Camp",0,8014,39545_shp,0,0
+31,12,t44C-b1F4E-slC,"NE Ithaca - Etna",1,8014,39603_shp,0,0
+31,12,t462-b1F4E-slC,"NE Ithaca - Winston Court - Central Camp",0,8014,39458_shp,0,0
+31,12,t4BA-b1F4E-slC,"NE Ithaca - Etna",1,8014,39613_shp,0,0
+31,12,t4D5-b1F4E-slC,"NE Ithaca - Winston Court - Central Camp",0,8014,39545_shp,0,0
+31,12,t51E-b1F4E-slC,"NE Ithaca - Winston Court - Etna",1,8014,39551_shp,0,0
+31,12,t539-b1F4E-slC,"NE Ithaca - Central Campus",0,8014,39563_shp,0,0
+31,12,t58C-b1F4E-slC,"NE Ithaca - Winston Court - Etna",1,8014,39592_shp,0,0
+31,12,t5AC-b1F4E-slC,"NE Ithaca - Central Campus",0,8014,39598_shp,0,0
+31,12,t5F0-b1F4E-slC,"NE Ithaca - Winston Court - Etna",1,8014,39551_shp,0,0
+31,12,t60B-b1F4E-slC,"NE Ithaca - Central Campus",0,8014,39563_shp,0,0
+31,12,t663-b1F4E-slC,"NE Ithaca - Winston Court - Etna",1,8014,39551_shp,0,0
+31,12,t6A6-b1F4E-slC,"NE Ithaca - Central Campus",0,8014,39563_shp,0,0
+31,12,t6CC-b1F4E-slC,"NE Ithaca - Winston Court - Etna",1,8014,39551_shp,0,0
+31,12,t70F-b1F4E-slC,"NE Ithaca - Central Campus",0,8014,39563_shp,0,0
+31,12,t735-b1F4E-slC,"NE Ithaca - Winston Court - Etna",1,8014,39551_shp,0,0
+31,12,t778-b1F4E-slC,"NE Ithaca - Central Campus",0,8014,39563_shp,0,0
+31,12,t7D0-b1F4E-slC,"NE Ithaca - Winston Court - Etna",1,8014,39617_shp,0,0
+32,12,t2BC-b1F50-slC,"Bryant Park-Cornell-Uptown-Airport",1,8016,39452_shp,0,0
+32,12,t2CD-b1F54-slC,"Cornell - Bryant Park - Downtown",0,8020,39443_shp,0,0
+32,12,t2EA-b1F50-slC,"Cornell - Bryant Park - Downtown",0,8016,39667_shp,0,0
+32,12,t320-b1F47-slC,"Bryant Park-Cornell-Uptown-Airport",1,8007,39452_shp,0,0
+32,12,t32D-b1F57-slC,"Cornell - Bryant Park - Downtown",0,8023,39443_shp,0,0
+32,12,t34E-b1F47-slC,"Cornell - Bryant Park - Downtown",0,8007,39667_shp,0,0
+32,12,t384-b1F50-slC,"Bryant Park-Cornell-Uptown-Airport",1,8016,39452_shp,0,0
+32,12,t3B2-b1F50-slC,"Cornell - Bryant Park - Downtown",0,8016,39667_shp,0,0
+32,12,t3E8-b1F47-slC,"Bryant Park-Cornell-Uptown-Airport",1,8007,39452_shp,0,0
+32,12,t412-b1F47-slC,"Cornell - Bryant Park - Downtown",0,8007,39527_shp,0,0
+32,12,t44C-b1F50-slC,"Bryant Park-Cornell-Uptown-Airport",1,8016,39452_shp,0,0
+32,12,t476-b1F50-slC,"Cornell - Bryant Park - Downtown",0,8016,39527_shp,0,0
+32,12,t4B0-b1F47-slC,"Bryant Park-Cornell-Uptown-Airport",1,8007,39629_shp,0,0
+32,12,t4D7-b1F47-slC,"Cornell - Bryant Park - Downtown",0,8007,39616_shp,0,0
+32,12,t514-b1F50-slC,"Bryant Park-Cornell-Uptown-Airport",1,8016,39629_shp,0,0
+32,12,t53B-b1F50-slC,"Cornell - Bryant Park - Downtown",0,8016,39616_shp,0,0
+32,12,t578-b1F47-slC,"Bryant Park-Cornell-Uptown-Airport",1,8007,39629_shp,0,0
+32,12,t59F-b1F47-slC,"Cornell - Bryant Park - Downtown",0,8007,39616_shp,0,0
+32,12,t5DC-b1F50-slC,"Bryant Park-Cornell-Uptown-Airport",1,8016,39442_shp,0,0
+32,12,t603-b1F50-slC,"Cornell - Bryant Park - Downtown",0,8016,39616_shp,0,0
+32,12,t640-b1F47-slC,"Bryant Park-Cornell-Uptown-Airport",1,8007,39442_shp,0,0
+32,12,t667-b1F47-slC,"Cornell - Bryant Park - Downtown",0,8007,39616_shp,0,0
+32,12,t6A4-b1F50-slC,"Bryant Park-Cornell-Uptown-Airport",1,8016,39442_shp,0,0
+32,12,t6CB-b1F50-slC,"Cornell - Bryant Park - Downtown",0,8016,39616_shp,0,0
+32,12,t708-b1F47-slC,"Bryant Park-Cornell-Uptown-Airport",1,8007,39442_shp,0,0
+32,12,t733-b1F47-slC,"Cornell - Bryant Park - Downtown",0,8007,39678_shp,0,0
+32,12,t76C-b1F50-slC,"Bryant Park-Cornell-Uptown-Airport",1,8016,39442_shp,0,0
+32,12,t7D0-b1F47-slC,"Bryant Park-Cornell-Uptown-Northwoods",1,8007,39612_shp,0,0
+32,12,t834-b1F52-slC,"Bryant Park-Cornell-Uptown-Northwoods",1,8018,39612_shp,0,0
+32,12,t852-b1F52-slC,"Cornell - Bryant Park - Downtown",0,8018,39443_shp,0,0
+32,12,t8A2-b1F52-slC,"Bryant Park-Cornell-Uptown-Northwoods",1,8018,39612_shp,0,0
+32,13,t320-b1B5B-slD,"Bryant Park-Cornell-Uptown-Airport",1,7003,39504_shp,0,0
+32,13,t343-b1B5B-slD,"Cornell - Bryant Park - Downtown",0,7003,39552_shp,0,0
+32,13,t384-b1B5C-slD,"Bryant Park-Cornell-Uptown-Airport",1,7004,39504_shp,0,0
+32,13,t3A7-b1B5C-slD,"Cornell - Bryant Park - Downtown",0,7004,39552_shp,0,0
+32,13,t3E8-b1B5B-slD,"Bryant Park-Cornell-Uptown-Airport",1,7003,39504_shp,0,0
+32,13,t40B-b1B5B-slD,"Cornell - Bryant Park - Downtown",0,7003,39552_shp,0,0
+32,13,t44C-b1B5C-slD,"Bryant Park-Cornell-Uptown-Airport",1,7004,39504_shp,0,0
+32,13,t46F-b1B5C-slD,"Cornell - Bryant Park - Downtown",0,7004,39552_shp,0,0
+32,13,t4B0-b1B5B-slD,"Bryant Park-Cornell-Uptown-Airport",1,7003,39504_shp,0,0
+32,13,t4D3-b1B5B-slD,"Cornell - Bryant Park - Downtown",0,7003,39552_shp,0,0
+32,13,t514-b1B5C-slD,"Bryant Park-Cornell-Uptown-Airport",1,7004,39504_shp,0,0
+32,13,t537-b1B5C-slD,"Cornell - Bryant Park - Downtown",0,7004,39552_shp,0,0
+32,13,t578-b1B5B-slD,"Bryant Park-Cornell-Uptown-Airport",1,7003,39504_shp,0,0
+32,13,t59B-b1B5B-slD,"Cornell - Bryant Park - Downtown",0,7003,39552_shp,0,0
+32,13,t5DC-b1B5C-slD,"Bryant Park-Cornell-Uptown-Airport",1,7004,39504_shp,0,0
+32,13,t5FF-b1B5C-slD,"Cornell - Bryant Park - Downtown",0,7004,39552_shp,0,0
+32,13,t640-b1B5B-slD,"Bryant Park-Cornell-Uptown-Airport",1,7003,39504_shp,0,0
+32,13,t663-b1B5B-slD,"Cornell - Bryant Park - Downtown",0,7003,39552_shp,0,0
+32,13,t6A4-b1B5C-slD,"Bryant Park-Cornell-Uptown-Airport",1,7004,39504_shp,0,0
+32,13,t6C7-b1B5C-slD,"Cornell - Bryant Park - Downtown",0,7004,39552_shp,0,0
+32,13,t708-b1B5B-slD,"Bryant Park-Cornell-Uptown-Airport",1,7003,39504_shp,0,0
+32,13,t72B-b1B5B-slD,"Cornell - Bryant Park - Downtown",0,7003,39552_shp,0,0
+32,13,t76C-b1B5C-slD,"Bryant Park-Cornell-Uptown-Northwoods",1,7004,39548_shp,0,0
+32,15,t320-b232A-slF,"Bryant Park-Cornell-Uptown-Airport",1,9002,39550_shp,0,0
+32,15,t343-b232A-slF,"Cornell - Bryant Park - Downtown",0,9002,39530_shp,0,0
+32,15,t384-b232B-slF,"Bryant Park-Cornell-Uptown-Airport",1,9003,39550_shp,0,0
+32,15,t3A7-b232B-slF,"Cornell - Bryant Park - Downtown",0,9003,39530_shp,0,0
+32,15,t3E8-b232A-slF,"Bryant Park-Cornell-Uptown-Airport",1,9002,39550_shp,0,0
+32,15,t40B-b232A-slF,"Cornell - Bryant Park - Downtown",0,9002,39530_shp,0,0
+32,15,t44C-b232B-slF,"Bryant Park-Cornell-Uptown-Airport",1,9003,39550_shp,0,0
+32,15,t46F-b232B-slF,"Airport-Cornell - Bryant Park - Downtown",0,9003,39453_shp,0,0
+32,15,t4B0-b232A-slF,"Bryant Park-Cornell-Uptown-Airport",1,9002,39550_shp,0,0
+32,15,t4D3-b232A-slF,"Cornell - Bryant Park - Downtown",0,9002,39530_shp,0,0
+32,15,t514-b2333-slF,"Bryant Park-Cornell-Uptown-Airport",1,9011,39550_shp,0,0
+32,15,t537-b2333-slF,"Cornell - Bryant Park - Downtown",0,9011,39530_shp,0,0
+32,15,t578-b232A-slF,"Bryant Park-Cornell-Uptown-Airport",1,9002,39550_shp,0,0
+32,15,t59B-b232A-slF,"Cornell - Bryant Park - Downtown",0,9002,39530_shp,0,0
+32,15,t5DC-b2333-slF,"Bryant Park-Cornell-Uptown-Airport",1,9011,39550_shp,0,0
+32,15,t5FF-b2333-slF,"Cornell - Bryant Park - Downtown",0,9011,39530_shp,0,0
+32,15,t640-b232A-slF,"Bryant Park-Cornell-Uptown-Airport",1,9002,39550_shp,0,0
+32,15,t663-b232A-slF,"Cornell - Bryant Park - Downtown",0,9002,39530_shp,0,0
+32,15,t6A4-b2333-slF,"Bryant Park-Cornell-Uptown-Airport",1,9011,39550_shp,0,0
+32,15,t6C7-b2333-slF,"Cornell - Bryant Park - Downtown",0,9011,39530_shp,0,0
+32,15,t708-b232A-slF,"Bryant Park-Cornell-Uptown-Airport",1,9002,39550_shp,0,0
+32,15,t72B-b232A-slF,"Cornell - Bryant Park - Downtown",0,9002,39530_shp,0,0
+32,15,t76C-b2333-slF,"Bryant Park-Cornell-Uptown-Airport",1,9011,39550_shp,0,0
+32,15,t78F-b2333-slF,"Cornell - Bryant Park - Downtown",0,9011,39530_shp,0,0
+32,15,t7D0-b232A-slF,"Bryant Park-Cornell-Uptown-Northwoods",1,9002,39441_shp,0,0
+32,15,t834-b2333-slF,"Bryant Park-Cornell-Uptown-Northwoods",1,9011,39441_shp,0,0
+36,12,t271-b1F47-slC,"IHS-Lansing Town Hall",1,8007,39666_shp,0,0
+36,12,t292-b1F51-slC,"THS-Lansing Town Hall",1,8017,39574_shp,0,0
+36,12,t2C7-b1F51-slC,"cont as 37 Cornell - Downtown",0,8017,39673_shp,0,0
+36,12,t320-b1F4B-slC,"cont as 37 Cornell - Downtown",1,8011,39537_shp,0,0
+36,12,t33C-b1F4B-slC,"Cornell - E Shore Dr - Lansing Town Hall",0,8011,39639_shp,0,0
+36,12,t384-b1F45-slC,"Cornell - Downtown",0,8005,39534_shp,0,0
+36,12,t663-b1F5A-slC,"Lansing School via East Shore Drive",1,8026,39469_shp,0,0
+36,12,t6A9-b1F5A-slC,"Ithaca Mall",0,8026,39656_shp,0,0
+36,12,t7F5-b1F5C-slC,"Ithaca Mall",0,8028,39525_shp,0,0
+37,12,t27E-b1F47-slC,"Cornell - Downtown",0,8007,39538_shp,0,0
+37,12,t2CE-b1F51-slC,"Cornell - Downtown",0,8017,39618_shp,0,0
+37,12,t384-b1F4B-slC,"Cornell-Warren Rd at Farrell",1,8011,39465_shp,0,0
+37,12,t3A4-b1F4B-slC,"Cornell - Downtown",0,8011,39421_shp,0,0
+37,12,t463-b1F57-slC,"Cornell-Warren Rd-Lansing Tn Hl",1,8023,39621_shp,0,0
+37,12,t4B5-b1F57-slC,"Cornell - Downtown",0,8023,39648_shp,0,0
+37,12,t5FA-b1F57-slC,"Cornell-Warren Rd at Farrell",1,8023,39645_shp,0,0
+37,12,t645-b1F57-slC,"Cornell - Downtown",0,8023,39448_shp,0,0
+37,12,t663-b1F43-slC,"Cornell-Warren Rd at Farrell",1,8003,39645_shp,0,0
+37,12,t6AE-b1F43-slC,"Cornell - Downtown",0,8003,39653_shp,0,0
+37,12,t7D0-b1F5C-slC,"Cornell-Warren Rd-Lansing Tn Hl",1,8028,39621_shp,0,0
+40,12,t28C-b1F4C-slC,"Freeville-Groton",1,8012,39436_shp,0,0
+40,12,t2C6-b1F4C-slC,"Freeville - Varna - Cornell - Downtown",0,8012,39490_shp,0,0
+40,12,t352-b1F57-slC,"Varna - Freeville - Groton",1,8023,39662_shp,0,0
+40,12,t398-b1F57-slC,"Freeville - Varna - Cornell - Downtown",0,8023,39490_shp,0,0
+40,12,t5FA-b1F5B-slC,"Cornell - Varna - Freeville - Groton",1,8027,39439_shp,0,0
+40,12,t64C-b1F5B-slC,"Freeville - Cornell",0,8027,39553_shp,0,0
+40,12,t668-b1F4F-slC,"Cornell - Varna - Freeville - Groton",1,8015,39439_shp,0,0
+40,12,t6BA-b1F4F-slC,"Freeville-Varna-Downtown",0,8015,39509_shp,0,0
+40,12,t799-b1F4B-slC,"Freeville-Varna-Downtown",0,8011,39509_shp,0,0
+40,13,t2C4-b1B5C-slD,"Varna - Freeville - Groton",1,7004,39590_shp,0,0
+40,13,t2E2-b1B5C-slD,"Freeville - Varna - Cornell - Downtown",0,7004,39579_shp,0,0
+40,13,t3E8-b1B61-slD,"Varna - Freeville - Groton",1,7009,39590_shp,0,0
+40,13,t40B-b1B61-slD,"Freeville - Varna - Cornell - Downtown",0,7009,39446_shp,0,0
+40,13,t73A-b1B61-slD,"Freeville - Varna - Cornell - Downtown",0,7009,39576_shp,0,0
+40,15,t2C4-b232B-slF,"Varna - Freeville - Groton",1,9003,39543_shp,0,0
+40,15,t2E2-b232B-slF,"Freeville - Varna - Cornell - Downtown",0,9003,39435_shp,0,0
+40,15,t4E2-b232C-slF,"Cornell - Varna - Freeville - Groton",1,9004,39554_shp,0,0
+40,15,t534-b232C-slF,"Freeville - Varna - Cornell - Downtown",0,9004,39395_shp,0,0
+40,15,t73F-b233A-slF,"Freeville - Varna - Cornell - Downtown",0,9018,39503_shp,0,0
+43,12,t291-b1F4D-slC,"Dryden-TC3",1,8013,39584_shp,0,0
+43,12,t2C5-b1F4D-slC,"Varna - Cornell - Downtown",0,8013,39549_shp,0,0
+43,12,t2D2-b1F45-slC,"Cornell - Dryden - TC3",1,8005,39643_shp,0,0
+43,12,t2F3-b1F45-slC,"Varna - Cornell - Downtown",0,8005,39455_shp,0,0
+43,12,t330-b1F51-slC,"Cornell - Dryden - TC3",1,8017,39643_shp,0,0
+43,12,t357-b1F51-slC,"Varna - Cornell - Downtown",0,8017,39578_shp,0,0
+43,12,t3ED-b1F54-slC,"Dryden-Groton",1,8020,39595_shp,0,0
+43,12,t41A-b1F54-slC,"Dryden-TC3- Cornell",0,8020,39611_shp,0,0
+43,12,t4B5-b1F43-slC,"Cornell - Varna -Dryden -  TC3 - Groton",1,8003,39501_shp,0,0
+43,12,t519-b1F43-slC,"Dryden-TC3- Cornell",0,8003,39611_shp,0,0
+43,12,t591-b1F5A-slC,"Cornell - Varna -Dryden -  TC3 - Groton",1,8026,39501_shp,0,0
+43,12,t5E6-b1F43-slC,"Cornell - Dryden - TC3",1,8003,39643_shp,0,0
+43,12,t5F0-b1F5A-slC,"Dryden-TC3- Cornell",0,8026,39611_shp,0,0
+43,12,t615-b1F43-slC,"Downtown Express",0,8003,39651_shp,0,0
+43,12,t663-b1F4B-slC,"Cornell - Dryden - TC3",1,8011,39643_shp,0,0
+43,12,t6B3-b1F4B-slC,"Varna - Cornell - Downtown",0,8011,39468_shp,0,0
+43,12,t6D1-b1F5C-slC,"Cornell - Dryden - TC3",1,8028,39643_shp,0,0
+43,12,t72B-b1F5C-slC,"Varna - Downtown",0,8028,39437_shp,0,0
+43,12,t73F-b1F4B-slC,"Cornell - Varna -Dryden -  TC3 - Groton",1,8011,39501_shp,0,0
+43,13,t2C4-b1B5A-slD,"Varna -  Dryden - TC3 Dorms",1,7002,39529_shp,0,0
+43,13,t2E9-b1B5A-slD,"Cornell - Downtown",0,7002,39684_shp,0,0
+43,13,t46A-b1B61-slD,"Varna -  Dryden - TC3 Dorms",1,7009,39529_shp,0,0
+43,13,t4BA-b1B61-slD,"Varna - Downtown",0,7009,39660_shp,0,0
+43,13,t5E1-b1B61-slD,"Cornell -  Dryden - TC3 Dorms",1,7009,39513_shp,0,0
+43,13,t611-b1B61-slD,"Cornell - Downtown",0,7009,39684_shp,0,0
+43,13,t6D6-b1B61-slD,"Cornell - Varna -Dryden -  TC3 - Groton",1,7009,39593_shp,0,0
+43,15,t2CC-b232C-slF,"Varna -  Dryden - TC3 Dorms",1,9004,39485_shp,0,0
+43,15,t2F3-b232C-slF,"",0,9004,39422_shp,0,0
+43,15,t44C-b2333-slF,"Varna -  Dryden - TC3 Dorms",1,9011,39485_shp,0,0
+43,15,t474-b2333-slF,"",0,9011,39422_shp,0,0
+43,15,t5E6-b233A-slF,"Cornell -  Dryden - TC3 Dorms",1,9018,39647_shp,0,0
+43,15,t640-b233A-slF,"",0,9018,39422_shp,0,0
+43,15,t6DB-b233A-slF,"Cornell - Varna -Dryden -  TC3 - Groton",1,9018,39637_shp,0,0
+51,12,t276-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39588_shp,0,0
+51,12,t28E-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39528_shp,0,0
+51,12,t2DA-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39588_shp,0,0
+51,12,t2F2-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39528_shp,0,0
+51,12,t343-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39588_shp,0,0
+51,12,t35B-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39528_shp,0,0
+51,12,t3AC-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39588_shp,0,0
+51,12,t3EC-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39528_shp,0,0
+51,12,t415-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39588_shp,0,0
+51,12,t455-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39528_shp,0,0
+51,12,t47E-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39588_shp,0,0
+51,12,t4BC-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39528_shp,0,0
+51,12,t4E7-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39489_shp,0,0
+51,12,t527-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39586_shp,0,0
+51,12,t578-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39489_shp,0,0
+51,12,t590-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39586_shp,0,0
+51,12,t5E1-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39489_shp,0,0
+51,12,t5F9-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39586_shp,0,0
+51,12,t64A-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39489_shp,0,0
+51,12,t662-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39586_shp,0,0
+51,12,t6B3-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39489_shp,0,0
+51,12,t6CB-b1F46-slC,"Cornell - East Hill Plaza - Downtown",0,8006,39586_shp,0,0
+51,12,t71C-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39411_shp,0,0
+51,12,t734-b1F46-slC,"Cornell - Downtown",0,8006,39389_shp,0,0
+51,12,t785-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39411_shp,0,0
+51,12,t79D-b1F46-slC,"Cornell - Downtown",0,8006,39389_shp,0,0
+51,12,t7EE-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39411_shp,0,0
+51,12,t806-b1F46-slC,"Cornell - Downtown",0,8006,39389_shp,0,0
+51,12,t857-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39411_shp,0,0
+51,12,t86F-b1F46-slC,"Cornell - Downtown",0,8006,39389_shp,0,0
+51,12,t8C0-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39411_shp,0,0
+51,12,t900-b1F46-slC,"Cornell - Downtown",0,8006,39389_shp,0,0
+51,12,t929-b1F46-slC,"Collegetown - Cornell - Eastern Heights",1,8006,39411_shp,0,0
+51,12,t969-b1F46-slC,"Cornell - Downtown",0,8006,39390_shp,0,0
+51,13,t384-b1B5F-slD,"Collegetown - Cornell - Eastern Heights",1,7007,39641_shp,0,0
+51,13,t39B-b1B5F-slD,"Cornell - East Hill Plaza - Downtown",0,7007,39533_shp,0,0
+51,13,t44C-b1B5F-slD,"Collegetown - Cornell - Eastern Heights",1,7007,39641_shp,0,0
+51,13,t463-b1B5F-slD,"Cornell - East Hill Plaza - Downtown",0,7007,39533_shp,0,0
+51,13,t514-b1B5F-slD,"Collegetown - Cornell - Eastern Heights",1,7007,39569_shp,0,0
+51,13,t52E-b1B5F-slD,"Cornell - Downtown",0,7007,39494_shp,0,0
+51,13,t5DC-b1B5F-slD,"Collegetown - Cornell - Eastern Heights",1,7007,39569_shp,0,0
+51,13,t5F6-b1B5F-slD,"Cornell - Downtown",0,7007,39494_shp,0,0
+51,13,t6A4-b1B5F-slD,"Collegetown - Cornell - Eastern Heights",1,7007,39569_shp,0,0
+51,13,t6BE-b1B5F-slD,"Cornell - Downtown",0,7007,39494_shp,0,0
+51,13,t76C-b1B5F-slD,"Collegetown - Cornell - Eastern Heights",1,7007,39641_shp,0,0
+51,13,t783-b1B5F-slD,"Cornell - Downtown",0,7007,39526_shp,0,0
+51,13,t834-b1B5E-slD,"Collegetown - Cornell - Eastern Heights",1,7006,39641_shp,0,0
+51,13,t84B-b1B5E-slD,"Cornell - Downtown",0,7006,39526_shp,0,0
+51,15,t384-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39610_shp,0,0
+51,15,t39B-b2330-slF,"Cornell - East Hill Plaza - Downtown",0,9008,39496_shp,0,0
+51,15,t44C-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39610_shp,0,0
+51,15,t463-b2330-slF,"Cornell - East Hill Plaza - Downtown",0,9008,39496_shp,0,0
+51,15,t514-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39609_shp,0,0
+51,15,t52E-b2330-slF,"Cornell - Downtown",0,9008,39434_shp,0,0
+51,15,t5DC-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39609_shp,0,0
+51,15,t5F6-b2330-slF,"Cornell - Downtown",0,9008,39434_shp,0,0
+51,15,t6A4-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39609_shp,0,0
+51,15,t6BE-b2330-slF,"Cornell - Downtown",0,9008,39434_shp,0,0
+51,15,t76C-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39610_shp,0,0
+51,15,t783-b2330-slF,"Cornell - Downtown",0,9008,39434_shp,0,0
+51,15,t7D5-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39610_shp,0,0
+51,15,t7EC-b2330-slF,"Cornell - Downtown",0,9008,39434_shp,0,0
+51,15,t83E-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39610_shp,0,0
+51,15,t855-b2330-slF,"Cornell - Downtown",0,9008,39434_shp,0,0
+51,15,t8A7-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39610_shp,0,0
+51,15,t8BE-b2330-slF,"Cornell - Downtown",0,9008,39434_shp,0,0
+51,15,t910-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39610_shp,0,0
+51,15,t927-b2330-slF,"Cornell - Downtown",0,9008,39434_shp,0,0
+51,15,t979-b2330-slF,"Collegetown - Cornell - Eastern Heights",1,9008,39610_shp,0,0
+51,15,t990-b2330-slF,"Cornell - Downtown",0,9008,39642_shp,0,0
+52,12,t284-b1F4B-slC,"Caroline",1,8011,39438_shp,0,0
+52,12,t2C1-b1F4B-slC,"Brooktondale - Cornell - Downtown",0,8011,39519_shp,0,0
+52,12,t2F3-b1F54-slC,"Caroline",1,8020,39438_shp,0,0
+52,12,t331-b1F54-slC,"Brooktondale - Cornell - Downtown",0,8020,39519_shp,0,0
+52,12,t519-b1F57-slC,"Caroline",1,8023,39438_shp,0,0
+52,12,t535-b1F57-slC,"Brooktondale - Cornell - Downtown",0,8023,39519_shp,0,0
+52,12,t660-b1F53-slC,"Cornell - Brooktondale - Caroline",1,8019,39585_shp,0,0
+52,12,t6B3-b1F53-slC,"Downtown",0,8019,39535_shp,0,0
+52,12,t735-b1F5B-slC,"Cornell - Brooktondale - Caroline",1,8027,39585_shp,0,0
+52,12,t785-b1F5B-slC,"Downtown",0,8027,39400_shp,0,0
+52,13,t33E-b1B5A-slD,"Caroline",1,7002,39447_shp,0,0
+52,13,t357-b1B5A-slD,"Brooktondale - Downtown",0,7002,39399_shp,0,0
+52,13,t4D8-b1B59-slD,"Caroline",1,7001,39447_shp,0,0
+52,13,t517-b1B59-slD,"Brooktondale - Cornell - Downtown",0,7001,39555_shp,0,0
+52,13,t71C-b1B65-slD,"Cornell - Brooktondale - Caroline",1,7013,39594_shp,0,0
+52,13,t743-b1B65-slD,"Downtown",0,7013,39401_shp,0,0
+52,15,t343-b232C-slF,"Caroline",1,9004,39570_shp,0,0
+52,15,t35A-b232C-slF,"Brooktondale - Cornell - Downtown",0,9004,39596_shp,0,0
+52,15,t4CE-b232B-slF,"Caroline",1,9003,39570_shp,0,0
+52,15,t4E4-b232B-slF,"Brooktondale - Cornell - Downtown",0,9003,39650_shp,0,0
+52,15,t6D6-b233B-slF,"Cornell - Brooktondale - Caroline",1,9019,39659_shp,0,0
+52,15,t725-b233B-slF,"Downtown",0,9019,39620_shp,0,0
+65,12,t27F-b1F49-slC,"Danby",1,8009,39665_shp,0,0
+65,12,t2C1-b1F49-slC,"Downtown - Cornell",0,8009,39607_shp,0,0
+65,12,t38E-b1F49-slC,"Danby",1,8009,39547_shp,0,0
+65,12,t3A0-b1F49-slC,"Downtown",0,8009,39573_shp,0,0
+65,12,t58C-b1F57-slC,"Danby",1,8023,39665_shp,0,0
+65,12,t5A8-b1F57-slC,"Ithaca College - Downtown",0,8023,39685_shp,0,0
+65,12,t66A-b1F5B-slC,"Downtown - Danby",1,8027,39520_shp,0,0
+65,12,t6B8-b1F5B-slC,"Downtown",0,8027,39502_shp,0,0
+65,12,t6D6-b1F5B-slC,"Danby",1,8027,39665_shp,0,0
+65,12,t719-b1F5B-slC,"Downtown",0,8027,39502_shp,0,0
+67,12,t276-b1F45-slC,"Newfield",1,8005,39467_shp,0,0
+67,12,t28F-b1F45-slC,"Downtown",0,8005,39444_shp,0,0
+67,12,t389-b1F54-slC,"Newfield",1,8020,39467_shp,0,0
+67,12,t3A2-b1F54-slC,"Downtown",0,8020,39444_shp,0,0
+67,12,t587-b1F43-slC,"Newfield",1,8003,39467_shp,0,0
+67,12,t5A0-b1F43-slC,"Downtown",0,8003,39444_shp,0,0
+67,12,t663-b1F45-slC,"Downtown - Newfield",1,8005,39655_shp,0,0
+67,12,t6AE-b1F45-slC,"Downtown",0,8005,39444_shp,0,0
+67,12,t771-b1F5C-slC,"Newfield",1,8028,39671_shp,0,0
+67,12,t788-b1F5C-slC,"Downtown",0,8028,39444_shp,0,0
+67,13,t2C6-b1B5B-slD,"Newfield",1,7003,39450_shp,0,0
+67,13,t2DC-b1B5B-slD,"Downtown",0,7003,39680_shp,0,0
+67,13,t4E7-b1B61-slD,"Newfield",1,7009,39511_shp,0,0
+67,13,t528-b1B61-slD,"Downtown",0,7009,39680_shp,0,0
+67,13,t726-b1B66-slD,"Newfield",1,7014,39511_shp,0,0
+67,13,t73F-b1B66-slD,"Downtown",0,7014,39680_shp,0,0
+67,15,t2C6-b232A-slF,"Newfield",1,9002,39460_shp,0,0
+67,15,t2DC-b232A-slF,"Downtown",0,9002,39636_shp,0,0
+67,15,t3B1-b232C-slF,"Newfield",1,9004,39488_shp,0,0
+67,15,t3F2-b232C-slF,"Downtown",0,9004,39636_shp,0,0
+67,15,t76C-b233B-slF,"Newfield",1,9019,39488_shp,0,0
+67,15,t785-b233B-slF,"Downtown",0,9019,39636_shp,0,0
+77,13,t33E-b1B60-slD,"Ithaca Mall",0,7008,39679_shp,0,0
+77,13,t384-b1B60-slD,"Hanshaw Vil - Etna",1,7008,39532_shp,0,0
+77,13,t3A2-b1B60-slD,"Ithaca Mall",0,7008,39524_shp,0,0
+77,13,t3ED-b1B60-slD,"Lansing Town Hall",1,7008,39505_shp,0,0
+77,13,t406-b1B60-slD,"Ithaca Mall",0,7008,39679_shp,0,0
+77,13,t44C-b1B60-slD,"Hanshaw Vil - Etna",1,7008,39532_shp,0,0
+77,13,t46A-b1B60-slD,"Ithaca Mall",0,7008,39524_shp,0,0
+77,13,t519-b1B68-slD,"Lansing Town Hall",1,7016,39505_shp,0,0
+77,13,t532-b1B68-slD,"Ithaca Mall",0,7016,39679_shp,0,0
+77,13,t578-b1B68-slD,"Hanshaw Vil - Etna",1,7016,39532_shp,0,0
+77,13,t596-b1B68-slD,"Ithaca Mall",0,7016,39524_shp,0,0
+77,13,t5E1-b1B68-slD,"Lansing Town Hall",1,7016,39505_shp,0,0
+77,13,t5FA-b1B68-slD,"Ithaca Mall",0,7016,39679_shp,0,0
+77,13,t640-b1B68-slD,"Hanshaw Vil - Etna",1,7016,39532_shp,0,0
+77,13,t65E-b1B68-slD,"Ithaca Mall",0,7016,39524_shp,0,0
+77,13,t6A9-b1B68-slD,"Lansing Town Hall",1,7016,39505_shp,0,0
+77,13,t6C2-b1B68-slD,"Ithaca Mall",0,7016,39679_shp,0,0
+77,13,t6DB-b1B68-slD,"Hanshaw Vil - Etna",1,7016,39532_shp,0,0
+77,15,t33E-b2331-slF,"Ithaca Mall",0,9009,39626_shp,0,0
+77,15,t384-b2331-slF,"Hanshaw Vil - Etna",1,9009,39633_shp,0,0
+77,15,t3A2-b2331-slF,"Ithaca Mall",0,9009,39657_shp,0,0
+77,15,t3ED-b2331-slF,"Lansing Town Hall",1,9009,39675_shp,0,0
+77,15,t406-b2331-slF,"Ithaca Mall",0,9009,39626_shp,0,0
+77,15,t44C-b2331-slF,"Hanshaw Vil - Etna",1,9009,39633_shp,0,0
+77,15,t46A-b2331-slF,"Ithaca Mall",0,9009,39657_shp,0,0
+77,15,t519-b2339-slF,"Lansing Town Hall",1,9017,39675_shp,0,0
+77,15,t532-b2339-slF,"Ithaca Mall",0,9017,39626_shp,0,0
+77,15,t578-b2339-slF,"Hanshaw Vil - Etna",1,9017,39633_shp,0,0
+77,15,t596-b2339-slF,"Ithaca Mall",0,9017,39657_shp,0,0
+77,15,t5E1-b2339-slF,"Lansing Town Hall",1,9017,39675_shp,0,0
+77,15,t5FA-b2339-slF,"Ithaca Mall",0,9017,39626_shp,0,0
+77,15,t640-b2339-slF,"Hanshaw Vil - Etna",1,9017,39633_shp,0,0
+77,15,t65E-b2339-slF,"Ithaca Mall",0,9017,39657_shp,0,0
+77,15,t6A9-b2339-slF,"Lansing Town Hall",1,9017,39675_shp,0,0
+77,15,t6C2-b2339-slF,"Ithaca Mall",0,9017,39626_shp,0,0
+77,15,t6DB-b2339-slF,"Hanshaw Vil - Etna",1,9017,39633_shp,0,0
+81,12,t1B8-b1F41-slC,"Collegetown - Tower Rd",1,8001,39451_shp,0,0
+81,12,t1C7-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t203-b1F41-slC,"Central Campus - Tower Rd",1,8001,39663_shp,0,0
+81,12,t212-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t221-b1F41-slC,"Central Campus - Tower Rd",1,8001,39663_shp,0,0
+81,12,t258-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t267-b1F41-slC,"Central Campus - Tower Rd",1,8001,39663_shp,0,0
+81,12,t276-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t285-b1F41-slC,"Central Campus - Tower Rd",1,8001,39663_shp,0,0
+81,12,t2BC-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t2CB-b1F41-slC,"Central Campus - Tower Rd",1,8001,39663_shp,0,0
+81,12,t2DA-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t2E3-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t2EE-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t2EF-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t322-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t323-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t32E-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t32F-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t33A-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t33B-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t346-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t347-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t352-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t353-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t386-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t387-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t392-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t393-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t39E-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t39F-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t3AA-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t3AB-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t3B6-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t3B7-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t3EA-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t3EB-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t3F6-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t3F7-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t402-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t403-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t40E-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t40F-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t41A-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t41B-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t44E-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t44F-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t45A-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t45B-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t466-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t467-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t472-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t473-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t47E-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t47F-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t4B2-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t4B3-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t4BE-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t4BF-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t4CA-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t4CB-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t4D6-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t4D7-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t4E2-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t4E3-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t516-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t517-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t522-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t523-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t52E-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t52F-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t53A-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t53B-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t546-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t547-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t57A-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t57B-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t586-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t587-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t592-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t593-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t59E-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t59F-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t5AA-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t5AB-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t5DE-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t5DF-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t5EA-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t5EB-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t5F6-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t5F7-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t602-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t603-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t60E-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t60F-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t642-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t643-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t64E-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t64F-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t65A-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t65B-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t666-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t667-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t672-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t673-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t6A6-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t6A7-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t6B2-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t6B3-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t6BE-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t6BF-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t6CA-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t6CB-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t6D6-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t6D7-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t70A-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t70B-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t716-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t717-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t722-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t723-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t72E-b1F4A-slC,"Central Campus - A-Lot",0,8010,39564_shp,0,0
+81,12,t72F-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t73A-b1F56-slC,"Central Campus - A-Lot",0,8022,39564_shp,0,0
+81,12,t73B-b1F4A-slC,"Central Campus - Tower Rd",1,8010,39672_shp,0,0
+81,12,t76E-b1F41-slC,"Central Campus - A-Lot",0,8001,39564_shp,0,0
+81,12,t76F-b1F56-slC,"Central Campus - Tower Rd",1,8022,39672_shp,0,0
+81,12,t77A-b1F4A-slC,"Central Campus - A-Lot - Hasbrouck",0,8010,39565_shp,0,0
+81,12,t77B-b1F41-slC,"Central Campus - Tower Rd",1,8001,39672_shp,0,0
+81,12,t786-b1F56-slC,"Central Campus - A-Lot - Hasbrouck",0,8022,39565_shp,0,0
+81,12,t792-b1F41-slC,"Central Campus - A-Lot - Hasbrouck",0,8001,39565_shp,0,0
+82,12,t2E9-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t32F-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t34D-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t393-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t393-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39478_shp,0,0
+82,12,t3A2-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t3B1-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t3E8-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t3F7-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t406-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t415-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t44C-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t45B-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t46A-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t479-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t4B0-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t4BF-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t4CE-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t4DD-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t514-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t523-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t532-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t541-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t578-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t587-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t596-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t5A5-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t5DC-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t5EB-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t5FA-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t609-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t640-b1F45-slC,"East Hill Plaza - Campus Loop",1,8005,39649_shp,0,0
+82,12,t64F-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t66D-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t6B3-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t6D1-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t717-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t735-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t77B-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t799-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t7DF-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+82,12,t7FD-b1F44-slC,"East Hill Plaza - Campus Loop",1,8004,39649_shp,0,0
+90,12,t786-b1F58-slC,"Collegetown - North Campus",1,8024,39560_shp,0,0
+90,12,t79B-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t7A3-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t7D7-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t7DF-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t7EB-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t7F3-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t7FF-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t807-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t83B-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t843-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t84F-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t857-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t863-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t86B-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t89F-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t8A7-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t8B3-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t8BB-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t8C7-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t8CF-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t903-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t90B-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t917-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t91F-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t92B-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t933-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t967-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t96F-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t97B-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t983-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t98F-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t997-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t9CB-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t9D3-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,t9DF-b1F5B-slC,"Collegetown - Downtown",0,8027,39516_shp,0,0
+90,12,t9E7-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,t9F3-b1F58-slC,"Collegetown - Downtown",0,8024,39516_shp,0,0
+90,12,t9FB-b1F5B-slC,"Collegetown - North Campus",1,8027,39495_shp,0,0
+90,12,tA2F-b1F5B-slC,"Collegetown - Downtown",0,8027,39475_shp,0,0
+90,12,tA37-b1F58-slC,"Collegetown - North Campus",1,8024,39495_shp,0,0
+90,12,tA43-b1F58-slC,"Collegetown - Downtown",0,8024,39475_shp,0,0
+90,15,t76C-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t778-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t78F-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t79B-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t7A3-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t7D7-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t7DF-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t7EB-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t7F3-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t7FF-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t807-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t83B-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t843-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t84F-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t857-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t863-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t86B-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t89F-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t8A7-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t8B3-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t8BB-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t8C7-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t8CF-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t903-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t90B-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t917-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t91F-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t92B-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t933-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t967-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t96F-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t97B-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t983-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t98F-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t997-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t9CB-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t9D3-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,t9DF-b2335-slF,"Collegetown - Downtown",0,9013,39413_shp,0,0
+90,15,t9E7-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,t9F3-b2336-slF,"Collegetown - Downtown",0,9014,39413_shp,0,0
+90,15,t9FB-b2335-slF,"Collegetown - North Campus",1,9013,39391_shp,0,0
+90,15,tA2F-b2335-slF,"Collegetown - Downtown",0,9013,39412_shp,0,0
+90,15,tA37-b2336-slF,"Collegetown - North Campus",1,9014,39391_shp,0,0
+90,15,tA43-b2336-slF,"Collegetown - Downtown",0,9014,39412_shp,0,0
+92,12,t78A-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t79A-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t7D0-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t7E0-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t7EE-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t7FE-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t834-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t844-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t852-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t862-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t898-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t8A8-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t8B6-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t8C6-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t8FC-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t90C-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t91A-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t92A-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t960-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t970-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t97E-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t98E-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t9C4-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t9D4-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,t9E2-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,t9F2-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,12,tA28-b1F4A-slC,"West Campus - Collegetown",1,8010,39396_shp,0,0
+92,12,tA38-b1F4A-slC,"West Campus - Hasbrouck",0,8010,39418_shp,0,0
+92,13,t542-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t578-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t588-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t596-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t5A6-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t5DC-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t5EC-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t5FA-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t60A-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t640-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t650-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t65E-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t66E-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t6A4-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t6B4-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t6C2-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t6D2-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t708-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t718-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,13,t726-b1B59-slD,"West Campus - Collegetown",1,7001,39398_shp,0,0
+92,13,t736-b1B59-slD,"West Campus - Hasbrouck",0,7001,39420_shp,0,0
+92,15,t542-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t578-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t588-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t596-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t5A6-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t5DC-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t5EC-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t5FA-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t60A-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t640-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t650-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t65E-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t66E-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t6A4-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t6B4-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t6C2-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t6D2-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t708-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t718-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t726-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t736-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t76C-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t77C-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t78A-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t79A-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t7D0-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t7E0-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t7EE-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t7FE-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t834-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t844-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t852-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t862-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t898-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t8A8-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t8B6-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t8C6-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t8FC-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t90C-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t91A-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t92A-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t960-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t970-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t97E-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t98E-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t9C4-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t9D4-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,t9E2-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,t9F2-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+92,15,tA28-b232B-slF,"West Campus - Collegetown",1,9003,39397_shp,0,0
+92,15,tA38-b232B-slF,"West Campus - Hasbrouck",0,9003,39419_shp,0,0
+145,12,t3FB-b1F4B-slC,"W Vill-Linderman-Overlook",0,8011,39409_shp,0,0
+145,12,t415-b1F4B-slC,"W Hill-Shopping",1,8011,39414_shp,0,0
+145,12,t454-b1F4B-slC,"W Vill-Linderman-Overlook",0,8011,39407_shp,0,0
+145,12,t474-b1F4B-slC,"W Hill-Shopping",1,8011,39414_shp,0,0
+145,12,t4B3-b1F4B-slC,"W Vill-Linderman-Overlook",0,8011,39407_shp,0,0
+145,12,t4D3-b1F4B-slC,"W Hill-Shopping",1,8011,39414_shp,0,0
+145,12,t4EA-b1F4B-slC,"W Vill-Linderman-Overlook",0,8011,39407_shp,0,0
+145,12,t532-b1F4B-slC,"W Hill-Shopping",1,8011,39414_shp,0,0
+145,12,t549-b1F4B-slC,"W Vill-Linderman-Overlook",0,8011,39407_shp,0,0
+145,12,t591-b1F4B-slC,"W Hill-Shopping",1,8011,39414_shp,0,0
+145,12,t5A8-b1F4B-slC,"W Vill-Linderman-Overlook",0,8011,39407_shp,0,0
+145,12,t5F0-b1F4B-slC,"W Hill-Shopping",1,8011,39414_shp,0,0
+145,12,t607-b1F4B-slC,"W Vill-Linderman-Overlook",0,8011,39405_shp,0,0
+145,15,t3FB-b2334-slF,"W Vill-Linderman-Overlook",0,9012,39410_shp,0,0
+145,15,t415-b2334-slF,"W Hill-Shopping",1,9012,39415_shp,0,0
+145,15,t454-b2334-slF,"W Vill-Linderman-Overlook",0,9012,39408_shp,0,0
+145,15,t474-b2334-slF,"W Hill-Shopping",1,9012,39415_shp,0,0
+145,15,t4B3-b2334-slF,"W Vill-Linderman-Overlook",0,9012,39408_shp,0,0
+145,15,t4D3-b2334-slF,"W Hill-Shopping",1,9012,39415_shp,0,0
+145,15,t4EA-b2334-slF,"W Vill-Linderman-Overlook",0,9012,39408_shp,0,0
+145,15,t532-b2334-slF,"W Hill-Shopping",1,9012,39415_shp,0,0
+145,15,t549-b2334-slF,"W Vill-Linderman-Overlook",0,9012,39408_shp,0,0
+145,15,t591-b2334-slF,"W Hill-Shopping",1,9012,39415_shp,0,0
+145,15,t5A8-b2334-slF,"W Vill-Linderman-Overlook",0,9012,39406_shp,0,0
