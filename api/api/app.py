@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, make_response
+from flask import Flask, jsonify, render_template, request, make_response
 from google.transit import gtfs_realtime_pb2
 import requests
 import urllib3
@@ -34,7 +34,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Load and process stop data
 def load_stop_data():
-    with zipfile.ZipFile("../source/dataset.zip","r") as traffic_dataset_zip:
+    with zipfile.ZipFile("/workspaces/ece-5725-tcat-tracker/api/api/dataset.zip","r") as traffic_dataset_zip:
         traffic_dataset_zip.extractall()
 
     stop_dataset = pd.read_csv("./tcat-ny-us/stops.txt")
@@ -110,6 +110,12 @@ class TCATBusAPI:
         
         return updates
 
+
+# Webpage routes
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 # API Routes
 @app.route('/api/vehicles/<route_id>', methods=['GET'])
 def get_vehicles(route_id):
@@ -138,6 +144,33 @@ def get_trips():
             'status': 'error',
             'message': str(e)
         }), 500
+
+@app.route('/api/stops/<route_id>', methods=['GET'])
+def get_stops(route_id):
+    try:
+        # Get vehicle positions from TCATBusAPI
+        vehicles = TCATBusAPI.get_vehicle_positions(route_id)
+
+        # Read the file containing stop names
+        stops_file = './tcat-ny-us/route_'+route_id+'.txt';  
+
+        with open(stops_file, 'r') as file:
+            stops = [line.strip() for line in file.readlines()]
+
+        # Return the combined data
+        return jsonify({
+            'status': 'success',
+            'data': {
+                'vehicles': vehicles,
+                'stops': stops
+            }
+        })
+    except Exception as e:
+        return jsonify({
+            'status': 'error',
+            'message': str(e)
+        }), 500
+
 
 # Error Handlers
 @app.errorhandler(404)

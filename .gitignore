@@ -1,0 +1,77 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution/build directories
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.spec
+
+# Logs and debug output
+*.log
+
+# Cache
+*.cache/
+*.pytest_cache/
+
+# Testing
+.coverage
+.tox/
+.nox/
+*.hypothesis/
+.cache/
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+*.ini
+*.cfg
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+
+# Pyre
+.pyre/
+
+# Profiling
+*.prof
+*.lprof
+.prof/
+
+# Pytest
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage.*
+
+# Pylint reports
+pylint-report.txt
+pylint-report/
+
+# Local packages
