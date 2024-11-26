@@ -5,28 +5,11 @@ import urllib3
 import zipfile
 import pandas as pd
 from werkzeug.datastructures import Headers
+from flask_cors import CORS; 
 
 app = Flask(__name__)
 
-# CORS headers
-def add_cors_headers(response):
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
-    response.headers.add('Access-Control-Max-Age', '86400')  # 24 hours
-    return response
-
-# Handle OPTIONS requests
-@app.route('/', methods=['OPTIONS'])
-@app.route('/<path:path>', methods=['OPTIONS'])
-def options_handler():
-    response = make_response()
-    return add_cors_headers(response)
-
-# Add CORS headers to all responses
-@app.after_request
-def after_request(response):
-    return add_cors_headers(response)
+CORS(app); 
 
 
 # Disable SSL verification warnings
