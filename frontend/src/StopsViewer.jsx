@@ -14,13 +14,14 @@ function StopsViewer() {
     if (!routeId) return;
 
     setStatus('Fetching stops...');
-    const apiUrl = `/api/stops/${routeId}`;
+    const apiUrl = `/api/v2/stops/${routeId}`;
 
     try {
       const response = await fetch(apiUrl);
       const result = await response.json();
 
       if (result.status === 'success') {
+        console.log(result.data.stops);
         setStops(result.data.stops);
         setStatus('Stops fetched successfully.');
       } else {
@@ -64,7 +65,7 @@ function StopsViewer() {
       fetchStops(selectedRoute);
       fetchLocation(selectedRoute);
 
-      const intervalId = setInterval(() => fetchLocation(selectedRoute), fetch_interval);
+      const intervalId = setInterval(() => fetchStops(selectedRoute), fetch_interval);
       return () => clearInterval(intervalId);
     } else {
       setStops([]);
@@ -77,8 +78,9 @@ function StopsViewer() {
   };
 
   const getClassName = (stop) => {
-    const isIncoming = busLocation.some((location) => location.includes(stop));
-    return isIncoming ? 'incoming' : 'not-incoming';
+    if (!!!stop) { return 'hide' };
+    return stop['is_incoming'] ? 'incoming' : 'not-incoming';
+
   };
 
   return (
@@ -118,7 +120,7 @@ function StopsViewer() {
         {/* Live Location Status */}
         <p style={{ marginTop: '16px', textAlign: 'center' }}>Live location: {fetchStatus}</p>
 
-        
+
         <div>
           <StopsViewerGraph numPoints={stops.length} stops={stops} busLocation={busLocation} />
         </div>
@@ -129,7 +131,9 @@ function StopsViewer() {
             dataSource={stops}
             renderRow={(stop, index) => (
               <ListItem key={index} className={getClassName(stop)}>
-                {stop}
+                <span style={{ fontWeight: stop.is_incoming ? 'bold' : 'normal' }}>
+                  {stop.stop_name}
+                </span>
               </ListItem>
             )}
           >
@@ -138,8 +142,7 @@ function StopsViewer() {
             )}
           </List>
         </div>
-        
-        
+
       </div>
     </Page>
   );

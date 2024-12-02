@@ -1,34 +1,103 @@
-from flask import Flask, jsonify, render_template, request, make_response
+from flask import Flask, jsonify
 from google.transit import gtfs_realtime_pb2
 import requests
 import urllib3
-import zipfile
-import pandas as pd
-from werkzeug.datastructures import Headers
 from flask_cors import CORS; 
+import os 
+import pandas as pd
+import datetime
 
 app = Flask(__name__)
 
 CORS(app); 
 
 
-# Disable SSL verification warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Load and process stop data
 def load_stop_data():
-    with zipfile.ZipFile("/workspaces/ece-5725-tcat-tracker/api/api/dataset.zip","r") as traffic_dataset_zip:
-        traffic_dataset_zip.extractall()
-
-    stop_dataset = pd.read_csv("./tcat-ny-us/stops.txt")
+    basedir = os.path.abspath('.')
+    path = os.path.join(basedir, "tcat-ny-us", "stops.txt")
+    stop_dataset = pd.read_csv(path)
     stop_data = stop_dataset.to_numpy()
     return {
         'stop_ids': stop_data[:,0].tolist(),
         'stop_names': stop_data[:,2].tolist()
     }
 
-# Initialize stop data
 STOP_DATA = load_stop_data()
+
+class AppConfig:
+
+    def __init__(self):
+        self.base_path = None; 
+        self.trips_df = None; 
+        self.stop_times_df = None;
+        self.stops_df = None; 
+        self.load_dataframes();
+    
+
+    def load_dataframes(self):
+        base_path = os.path.join('tcat-ny-us')
+        self.trips_df = pd.read_csv(os.path.join(base_path, 'trips.txt'))
+        self.stop_times_df = pd.read_csv(os.path.join(base_path, 'stop_times.txt'))
+        self.stops_df = pd.read_csv(os.path.join(base_path, 'stops.txt'))
+
+    def get_stops_by_trip_id(self, trip_id):
+        try:
+            trip_stop_times = self.stop_times_df[self.stop_times_df['trip_id'].astype(str) == str(trip_id)]
+            
+            ordered_stops = (trip_stop_times
+                            .merge(self.stops_df, on='stop_id')
+                            .sort_values('stop_sequence')
+                            [['stop_name']]
+                            .drop_duplicates())
+            
+            if ordered_stops.empty:
+                print(f"No stops found for trip_id: {trip_id}")
+                return []
+                
+            return ordered_stops.to_dict('records')
+            
+        except Exception as e:
+            print(f"Error getting stops for trip_id {trip_id}: {str(e)}")
+            return []
+    
+    def get_stops_by_route_id(self, route_id):
+        relevant_trips = self.trips_df[self.trips_df['route_id'].astype(str) == route_id]
+        print(f"[DEBUG] RT: {relevant_trips}")
+
+        relevant_stop_times = self.stop_times_df[self.stop_times_df['trip_id'].astype(str) == route_id]
+
+        print(f"[DEBUG] RST: {relevant_trips}")
+
+
+        current_time = datetime.datetime.now()
+        current_time_str = current_time.strftime('%H:%M:%S')
+        print(f"[DEBUG]: Current time: {current_time_str}");
+
+        # Get active trips for the current time
+        active_trips = (relevant_stop_times[
+            (relevant_stop_times['departure_time'] <= current_time_str) & 
+            (relevant_stop_times['arrival_time'] >= current_time_str)
+        ])
+
+        # Get the first active trip_id
+        active_trip_id = active_trips['trip_id'].iloc[0]
+        print(f"[DEBUG]: selected active trip ID: {active_trip_id}");
+        print(f"[DEBUG]: All active trip ID: {active_trips['trip_id']}");
+
+        relevant_stop_times = self.stop_times_df[self.stop_times_df['trip_id'].isin(relevant_trips['trip_id'])]
+
+        ordered_stops = (relevant_stop_times[relevant_stop_times['trip_id'] == active_trip_id]
+                        .merge(self.stops_df, on='stop_id')
+                        .sort_values('stop_sequence')
+                        [['stop_name']]
+                        .drop_duplicates())
+
+        print(ordered_stops)
+        return ordered_stops.to_dict('records')
+
+config = AppConfig();
 
 class TCATBusAPI:
     @staticmethod
@@ -58,7 +127,8 @@ class TCATBusAPI:
                         'latitude': vehicle.position.latitude,
                         'longitude': vehicle.position.longitude,
                         'speed': vehicle.position.speed if vehicle.position.HasField('speed') else None,
-                        'incoming_stop': incoming_stop
+                        'incoming_stop': incoming_stop,
+                        'trip_id': vehicle.trip.trip_id
                     })
         
         return vehicles
@@ -94,10 +164,6 @@ class TCATBusAPI:
         return updates
 
 
-# Webpage routes
-@app.route('/')
-def home():
-    return render_template('index.html')
 
 # API Routes
 @app.route('/api/vehicles/<route_id>', methods=['GET'])
@@ -128,24 +194,59 @@ def get_trips():
             'message': str(e)
         }), 500
 
+@app.route('/api/v2/stops/<route_id>', methods=['GET'])
+def get_stops2(route_id):
+    print(f"extracting stops for :{route_id}");
+    vehicles = TCATBusAPI.get_vehicle_positions(route_id)
+    
+    ans = config.get_stops_by_trip_id(vehicles[0]['trip_id'])
+    
+    incoming_stops = [v['incoming_stop'] for v in vehicles]
+    res = []
+    for stop in ans: 
+        res.append({
+            "stop_name": stop['stop_name'],
+            "is_incoming": stop['stop_name'] in incoming_stops
+        }); 
+    
+    return jsonify({
+            'status': 'success',
+            'data': {
+                'stops': res,
+            },
+            'vehicles': vehicles
+    })
+
+
 @app.route('/api/stops/<route_id>', methods=['GET'])
 def get_stops(route_id):
     try:
         # Get vehicle positions from TCATBusAPI
         vehicles = TCATBusAPI.get_vehicle_positions(route_id)
+        
+        # Get list of incoming stops from vehicles
+        incoming_stops = [v['incoming_stop'] for v in vehicles]
+        
+        # Get unique vehicle IDs for active buses count
+        active_buses = len({v['vehicle_id'] for v in vehicles})
 
-        # Read the file containing stop names
-        stops_file = './tcat-ny-us/route_'+route_id+'.txt';  
-
+        # Read and process stops
+        stops_file = os.path.join('tcat-ny-us', f'route_{route_id}.txt')
         with open(stops_file, 'r') as file:
-            stops = [line.strip() for line in file.readlines()]
+            stops = []
+            for line in file:
+                stop_name = line.strip()
+                stops.append({
+                    'name': stop_name,
+                    'is_incoming': stop_name in incoming_stops
+                })
 
-        # Return the combined data
         return jsonify({
             'status': 'success',
             'data': {
                 'vehicles': vehicles,
-                'stops': stops
+                'stops': stops,
+                'active_buses': active_buses
             }
         })
     except Exception as e:

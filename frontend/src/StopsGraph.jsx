@@ -31,7 +31,14 @@ const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
   };
 
   const getStopColor = (stop) => {
-    return getIsIncoming(stop) ? "blue" : "red";
+    if(!!!stop) return "black"; 
+
+    return stop['is_incoming'] ? "blue" : "red";
+  }
+
+  const getStopName = (stop) => {
+    if(!!! stop) return 'N/A'; 
+    return stop['stop_name']
   }
 
   const calculateLinePoints = (lineIndex) => {
@@ -88,7 +95,7 @@ const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
                 <Text
                   x={point.x + 10}
                   y={point.y - 15}
-                  text={splitIntoLines(`${stops[lineIndex * POINTS_PER_LINE + pointIndex]}`)}
+                  text={splitIntoLines(`${getStopName(stops[lineIndex * POINTS_PER_LINE + pointIndex])}`)}
                   fontSize={8}
                   fill="black"
                   align="left"

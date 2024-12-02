@@ -1,0 +1,39 @@
+,stop_name
+4001,The Shops at Ithaca Mall
+91,Ithaca Commons - Green St
+1729,Ithaca Commons - Seneca St
+24,Tops Supermarket (Lansing)
+2224,State/MLK @ Stewart
+5590,Albany at Salvation Army
+5245,Lansing West Apts
+45,State/MLK @ Quarry
+26,Triphammer at Kendal
+4529,Triphammer @ Winthrop
+46,College @ Mitchell
+3776,Triphammer @ Spruce
+2046,Collegetown Crossing
+4309,Pleasant Grove @ Hanshaw
+314,College @ Oak
+6,Carpenter Hall
+5250,Jessup @ Pleasant Grove
+7,Statler Hall
+5364,Robert Purcell Community Center
+139,Baker Flagpole  - Slope Side
+391,Jessup @ Triphammer
+51,Rockefeller Hall
+140,Milstein Hall
+5710,Risley Hall - Shelter
+318,Thurston at Balch Hall
+5861,Baker Flagpole
+4951,Goldwin Smith Hall
+1021,Anabel Taylor Hall
+35,Sage Hall
+1182,Schwartz Performing Arts Center
+798,College @ Cook
+275,Triphammer @ Texas
+278,Triphammer Marketplace
+18,Cayuga Mall
+280,Triphammer @ Graham
+63,YMCA
+151,Graham@Butler
+64,Butler@Graham
