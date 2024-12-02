@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Stage, Layer, Line, Rect, Text } from "react-konva";
-const POINTS_PER_LINE = 10;
+const POINTS_PER_LINE = 5;
 
 const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
   const [dimensions, setDimensions] = useState({
-    width: window.innerWidth * 0.9, // Use 90% of viewport width
+    width: window.innerWidth * 1, // Use 90% of viewport width
     height: window.innerHeight * 0.6 // Use 60% of viewport height
   });
 
   useEffect(() => {
     const handleResize = () => {
       setDimensions({
-        width: window.innerWidth * 0.9,
+        width: window.innerWidth * 1,
         height: window.innerHeight * 0.6
       });
     };
@@ -30,16 +30,34 @@ const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
     return busLocation.some((location) => location.includes(stop));
   };
 
-  const getStopColor = (stop) => {
-    if(!!!stop) return "black"; 
+  const getStopColor = (stops, lineIndex, pointIndex) => {
+    const stop = getStop(stops, lineIndex, pointIndex);
+    if(!!!stop) return 'black';
 
     return stop['is_incoming'] ? "blue" : "red";
   }
 
-  const getStopName = (stop) => {
-    if(!!! stop) return 'N/A'; 
-    return stop['stop_name']
+  const getStop = (stops, lineIndex, pointIndex) => {
+    if (!stops || stops.length === 0) return 'N/A';
+
+    const start = lineIndex * POINTS_PER_LINE;
+    const end = start + POINTS_PER_LINE - 1;
+
+    // Determine the correct index based on whether the lineIndex is odd or even
+    const index = (lineIndex % 2 === 0) 
+        ? start + pointIndex // Even lineIndex: normal order
+        : end - pointIndex;  // Odd lineIndex: reverse order
+
+    const stop = stops[index];
+    return stop;
   }
+
+
+  const getStopName = (stops, lineIndex, pointIndex) => {
+    const stop = getStop(stops, lineIndex, pointIndex);
+    if (!stop) return 'N/A';
+    return stop['stop_name'];
+};
 
   const calculateLinePoints = (lineIndex) => {
     const points = [];
@@ -65,6 +83,11 @@ const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
     ];
   };
 
+  const getReverse = (linePoints) => {
+    const reversedLinePoints = linePoints.slice().reverse();
+    return reversedLinePoints;
+  }
+
   if(stops.length === 0) {
     return null;
   }
@@ -74,13 +97,20 @@ const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
       <Layer>
         {allLines.map((linePoints, lineIndex) => (
           <React.Fragment key={`line-${lineIndex}`}>
-            <Line
+            {lineIndex % 2 == 1 ? <Line
               points={linePoints.flatMap(point => [point.x, point.y])}
               stroke="green"
               strokeWidth={0.5}
               lineCap="round"
               lineJoin="round"
-            />
+            /> :
+            <Line
+              points={(getReverse(linePoints)).flatMap(point => [point.x, point.y])}
+              stroke="green"
+              strokeWidth={0.5}
+              lineCap="round"
+              lineJoin="round"
+            />  }
 
             {linePoints.map((point, pointIndex) => (
               <React.Fragment key={`point-${lineIndex}-${pointIndex}`}>
@@ -89,14 +119,14 @@ const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
                   y={point.y - 10}
                   width={10}
                   height={20}
-                  fill={getStopColor(stops[lineIndex * POINTS_PER_LINE + pointIndex])}
+                  fill={getStopColor(stops, lineIndex, pointIndex)}
                   shadowBlur={3}
                 />
                 <Text
                   x={point.x + 10}
                   y={point.y - 15}
-                  text={splitIntoLines(`${getStopName(stops[lineIndex * POINTS_PER_LINE + pointIndex])}`)}
-                  fontSize={8}
+                  text={splitIntoLines(`${getStopName(stops, lineIndex, pointIndex)}`)}
+                  fontSize={12}
                   fill="black"
                   align="left"
                   width={80}
