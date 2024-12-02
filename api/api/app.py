@@ -6,13 +6,94 @@ from flask_cors import CORS;
 import os 
 import pandas as pd
 import datetime
+from flask_apscheduler import APScheduler
+import csv
+from twilio.rest import Client
+from dotenv import load_dotenv
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail, Email, To, Content
 
 app = Flask(__name__)
+scheduler = APScheduler()
 
 CORS(app); 
 
+load_dotenv()
+
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Twilio configuration
+TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
+TWILIO_PHONE_NUMBER = os.getenv('TWILIO_PHONE_NUMBER')
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+sg = SendGridAPIClient(SENDGRID_API_KEY)
+FROM_EMAIL = os.getenv('FROM_EMAIL')
+
+client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+counter = 0; 
+
+def send_notification(row):
+    print(f"sending mail for :{row}")
+    try:
+        message = Mail(
+            from_email=Email(FROM_EMAIL),
+            to_emails=To(row['email']),
+            subject=f"Route Update: {row['route']}",
+            plain_text_content=f"TCAT Route: {row['route']} is coming soon to the Stop: {row['stop']}, please plan accordingly"
+        )
+        
+        response = sg.send(message)
+        if response.status_code == 202:
+            print(f"Email sent successfully to {row['email']}")
+            return True
+        else:
+            print(f"Failed to send email: {response.status_code}")
+            return False
+            
+    except Exception as e:
+        print(f"Error sending email: {str(e)}")
+        return False
+
+
+
+def send_notification_sms(row):
+    global counter
+    print(f"sending sms for :{row}")
+    if(counter > 0):
+        print("Done"); 
+    try:
+        message_content = f"Alert: Bus on route {row['route']} will arrive at stop {row['stop']} shortly."
+        
+        message = client.messages.create(
+            body=message_content,
+            from_=TWILIO_PHONE_NUMBER,
+            to=row['number']
+        )
+        print(f"SMS sent successfully! SID: {message.sid}")
+        counter += 1;
+        return True
+    except Exception as e:
+        print(f"Error sending SMS: {str(e)}")
+        return False    
+
+def read_csv_file(vehicles):
+    with open('routes.csv', 'r') as file:
+        csv_reader = csv.DictReader(file)
+        canidates = [] 
+        for row in csv_reader:
+            print(f"Processing : {row}")
+            canidates.append(row)
+            number = row['number']
+            stop = row['stop']
+            route = row['route']
+            print(f"Processing: Number: {number}, Stop: {stop}, Route: {route}")
+            for vehicle in vehicles:
+                if route == vehicle['route_id'] and stop == vehicle['incoming_stop']:
+                    canidates.append(row); 
+        
+        send_notification(canidates[0]);
 
 def load_stop_data():
     basedir = os.path.abspath('.')
@@ -198,7 +279,13 @@ def get_trips():
 def get_stops2(route_id):
     print(f"extracting stops for :{route_id}");
     vehicles = TCATBusAPI.get_vehicle_positions(route_id)
-    
+    if not vehicles:
+        return jsonify ({
+            'status': 'success',
+            'data': [],
+            'vehicles': []
+        }); 
+
     ans = config.get_stops_by_trip_id(vehicles[0]['trip_id'])
     
     incoming_stops = [v['incoming_stop'] for v in vehicles]
@@ -255,6 +342,13 @@ def get_stops(route_id):
             'message': str(e)
         }), 500
 
+@scheduler.task('cron', id='read_csv_task', minute='*')
+def scheduled_task():
+    with app.app_context():
+        for route in [30]:
+            vehicles = TCATBusAPI.get_vehicle_positions(route);
+            read_csv_file(vehicles)
+
 
 # Error Handlers
 @app.errorhandler(404)
@@ -272,4 +366,6 @@ def server_error(error):
     }), 500
 
 if __name__ == '__main__':
+    scheduler.init_app(app)
+    scheduler.start()
     app.run(debug=True)

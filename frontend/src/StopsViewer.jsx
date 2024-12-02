@@ -22,8 +22,13 @@ function StopsViewer() {
 
       if (result.status === 'success') {
         console.log(result.data.stops);
-        setStops(result.data.stops);
-        setStatus('Stops fetched successfully.');
+        if(!!!result.data.stops){
+          setStops([]);
+          setStatus('No Running vehicles currently');
+        } else {
+          setStops(result.data.stops);
+          setStatus('Stops fetched successfully.');
+        }
       } else {
         setStatus('Error fetching stops.');
         console.error('API Error:', result.message);
@@ -118,7 +123,7 @@ function StopsViewer() {
         </div>
 
         {/* Live Location Status */}
-        <p style={{ marginTop: '16px', textAlign: 'center' }}>Live location: {fetchStatus}</p>
+        <p style={{ marginTop: '16px', textAlign: 'center' }}>Live location: {status}</p>
 
 
         <div>
@@ -137,7 +142,7 @@ function StopsViewer() {
               </ListItem>
             )}
           >
-            {stops.length === 0 && (
+            {stops.length === 0 && status === 'Select a route' && (
               <ListItem>No stops available. Select a route for More Details</ListItem>
             )}
           </List>
