@@ -97,7 +97,7 @@ const NotificationButton = () => {
         }}>
           <div style={{
             backgroundColor: 'white',
-            padding: '20px',
+            padding: '40px',
             borderRadius: '8px',
             width: '80vw',
             maxWidth: '600px'
