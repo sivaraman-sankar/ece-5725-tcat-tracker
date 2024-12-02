@@ -4,14 +4,14 @@ const POINTS_PER_LINE = 5;
 
 const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
   const [dimensions, setDimensions] = useState({
-    width: window.innerWidth * 1, // Use 90% of viewport width
+    width: window.innerWidth * 0.9, // Use 90% of viewport width
     height: window.innerHeight * 0.6 // Use 60% of viewport height
   });
 
   useEffect(() => {
     const handleResize = () => {
       setDimensions({
-        width: window.innerWidth * 1,
+        width: window.innerWidth * 0.9,
         height: window.innerHeight * 0.6
       });
     };

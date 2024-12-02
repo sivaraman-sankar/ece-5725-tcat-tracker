@@ -93,14 +93,17 @@ const NotificationButton = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          zIndex: 1000
+          zIndex: 1000,
+          overflow: 'auto'
         }}>
           <div style={{
             backgroundColor: 'white',
             padding: '40px',
             borderRadius: '8px',
             width: '80vw',
-            maxWidth: '600px'
+            maxWidth: '600px',
+            height: '50vh',
+            overflow: 'auto'
           }}>
             <input
               type="email"
