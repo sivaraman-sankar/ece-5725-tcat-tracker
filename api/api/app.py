@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from google.transit import gtfs_realtime_pb2
 import requests
 import urllib3
@@ -33,6 +33,26 @@ FROM_EMAIL = os.getenv('FROM_EMAIL')
 
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 counter = 0; 
+
+def save_route_data(email, stop, route):
+    # Read existing data or create new DataFrame
+    try:
+        df = pd.read_csv('routes.csv')
+    except FileNotFoundError:
+        df = pd.DataFrame(columns=['email', 'stop', 'route'])
+    
+    # Create new data entry
+    new_data = {
+        'email': email,
+        'stop': stop,
+        'route': route
+    }
+    
+    # Append new data using concat instead of deprecated append
+    df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
+    
+    # Save to CSV
+    df.to_csv('routes.csv', index=False)
 
 def send_notification(row):
     print(f"sending mail for :{row}")
@@ -85,10 +105,9 @@ def read_csv_file(vehicles):
         for row in csv_reader:
             print(f"Processing : {row}")
             canidates.append(row)
-            number = row['number']
             stop = row['stop']
             route = row['route']
-            print(f"Processing: Number: {number}, Stop: {stop}, Route: {route}")
+            print(f"Processing: Mail: {row['email']}, Stop: {stop}, Route: {route}")
             for vehicle in vehicles:
                 if route == vehicle['route_id'] and stop == vehicle['incoming_stop']:
                     canidates.append(row); 
@@ -259,6 +278,38 @@ def get_vehicles(route_id):
         return jsonify({
             'status': 'error',
             'message': str(e)
+        }), 500
+
+@app.route('/submit', methods=['POST'])
+def submit():
+    try:
+        data = request.get_json()
+        
+        email = data.get('email')
+        stop = data.get('stop')
+        route = data.get('route')
+        
+        # Validate required fields
+        if not all([email, stop, route]):
+            return jsonify({
+                'error': 'Missing required fields'
+            }), 400
+            
+        # Here you can add your logic to process the data
+        # For example, save to database or send notifications
+        save_route_data(email, stop, route)
+        return jsonify({
+            'message': 'Notification settings saved successfully',
+            'data': {
+                'email': email,
+                'stop': stop,
+                'route': route
+            }
+        }), 200
+        
+    except Exception as e:
+        return jsonify({
+            'error': str(e)
         }), 500
 
 @app.route('/api/trips', methods=['GET'])

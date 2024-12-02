@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './StopsViewer.css'; // Create a CSS file for styles
+import NotificationButton from './NotificationButton';
 import { Page, Toolbar, Button, List, ListItem, Select } from 'react-onsenui';
 import StopsViewerGraph from './StopsGraph';
 function StopsViewer() {
@@ -113,13 +114,7 @@ function StopsViewer() {
           </Select>
 
           {/* Notify Button */}
-          <Button
-            modifier="large"
-            onClick={() => alert('Notification set!')}
-            style={{ flexShrink: 0, width: '40vw' }} // Prevent shrinking of the button
-          >
-            Notify Me!
-          </Button>
+          <NotificationButton></NotificationButton>
         </div>
 
         {/* Live Location Status */}
