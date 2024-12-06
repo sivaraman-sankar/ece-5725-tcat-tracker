@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, render_template, request
 from google.transit import gtfs_realtime_pb2
 import requests
 import urllib3
@@ -13,7 +13,14 @@ from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, To, Content
 
-app = Flask(__name__)
+
+
+app = Flask(__name__,
+    static_url_path='',
+    static_folder='../../frontend/build',
+    template_folder='../../frontend/build'
+)
+
 scheduler = APScheduler()
 
 CORS(app); 
@@ -400,6 +407,10 @@ def scheduled_task():
             vehicles = TCATBusAPI.get_vehicle_positions(route);
             read_csv_file(vehicles)
 
+
+@app.route('/')
+def serve_react():
+    return render_template("index.html")
 
 # Error Handlers
 @app.errorhandler(404)
