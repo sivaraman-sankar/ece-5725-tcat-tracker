@@ -1,3 +1,6 @@
+from functools import wraps
+from backend.helpers.app_config import AppConfig
+from backend.helpers.notification_manager import NotificationManager
 from flask import Flask, jsonify, render_template, request
 from google.transit import gtfs_realtime_pb2
 import requests
@@ -8,12 +11,12 @@ import pandas as pd
 import datetime
 from flask_apscheduler import APScheduler
 import csv
-from twilio.rest import Client
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail, Email, To, Content
+from sendgrid.helpers.mail import Mail, Email, To
+import logging
 
-
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__,
     static_url_path='',
@@ -23,103 +26,14 @@ app = Flask(__name__,
 
 scheduler = APScheduler()
 
-CORS(app); 
-
 load_dotenv()
 
+ROUTES = [30, 10, 90, 81]
+NOTIFICATION_LOG_FILE = 'routes.csv'
+
+CORS(app); 
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-# Twilio configuration
-TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
-TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
-TWILIO_PHONE_NUMBER = os.getenv('TWILIO_PHONE_NUMBER')
-SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
-sg = SendGridAPIClient(SENDGRID_API_KEY)
-FROM_EMAIL = os.getenv('FROM_EMAIL')
-
-client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
-counter = 0; 
-
-def save_route_data(email, stop, route):
-    # Read existing data or create new DataFrame
-    try:
-        df = pd.read_csv('routes.csv')
-    except FileNotFoundError:
-        df = pd.DataFrame(columns=['email', 'stop', 'route'])
-    
-    # Create new data entry
-    new_data = {
-        'email': email,
-        'stop': stop,
-        'route': route
-    }
-    
-    # Append new data using concat instead of deprecated append
-    df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
-    
-    # Save to CSV
-    df.to_csv('routes.csv', index=False)
-
-def send_notification(row):
-    print(f"sending mail for :{row}")
-    try:
-        message = Mail(
-            from_email=Email(FROM_EMAIL),
-            to_emails=To(row['email']),
-            subject=f"Route Update: {row['route']}",
-            plain_text_content=f"TCAT Route: {row['route']} is coming soon to the Stop: {row['stop']}, please plan accordingly"
-        )
-        
-        response = sg.send(message)
-        if response.status_code == 202:
-            print(f"Email sent successfully to {row['email']}")
-            return True
-        else:
-            print(f"Failed to send email: {response.status_code}")
-            return False
-            
-    except Exception as e:
-        print(f"Error sending email: {str(e)}")
-        return False
-
-
-
-def send_notification_sms(row):
-    global counter
-    print(f"sending sms for :{row}")
-    if(counter > 0):
-        print("Done"); 
-    try:
-        message_content = f"Alert: Bus on route {row['route']} will arrive at stop {row['stop']} shortly."
-        
-        message = client.messages.create(
-            body=message_content,
-            from_=TWILIO_PHONE_NUMBER,
-            to=row['number']
-        )
-        print(f"SMS sent successfully! SID: {message.sid}")
-        counter += 1;
-        return True
-    except Exception as e:
-        print(f"Error sending SMS: {str(e)}")
-        return False    
-
-def read_csv_file(vehicles):
-    with open('routes.csv', 'r') as file:
-        csv_reader = csv.DictReader(file)
-        canidates = [] 
-        for row in csv_reader:
-            print(f"Processing : {row}")
-            canidates.append(row)
-            stop = row['stop']
-            route = row['route']
-            print(f"Processing: Mail: {row['email']}, Stop: {stop}, Route: {route}")
-            for vehicle in vehicles:
-                if route == vehicle['route_id'] and stop == vehicle['incoming_stop']:
-                    canidates.append(row); 
-        
-        send_notification(canidates[0]);
 
 def load_stop_data():
     basedir = os.path.abspath('.')
@@ -133,78 +47,22 @@ def load_stop_data():
 
 STOP_DATA = load_stop_data()
 
-class AppConfig:
-
-    def __init__(self):
-        self.base_path = None; 
-        self.trips_df = None; 
-        self.stop_times_df = None;
-        self.stops_df = None; 
-        self.load_dataframes();
-    
-
-    def load_dataframes(self):
-        base_path = os.path.join('tcat-ny-us')
-        self.trips_df = pd.read_csv(os.path.join(base_path, 'trips.txt'))
-        self.stop_times_df = pd.read_csv(os.path.join(base_path, 'stop_times.txt'))
-        self.stops_df = pd.read_csv(os.path.join(base_path, 'stops.txt'))
-
-    def get_stops_by_trip_id(self, trip_id):
-        try:
-            trip_stop_times = self.stop_times_df[self.stop_times_df['trip_id'].astype(str) == str(trip_id)]
-            
-            ordered_stops = (trip_stop_times
-                            .merge(self.stops_df, on='stop_id')
-                            .sort_values('stop_sequence')
-                            [['stop_name']]
-                            .drop_duplicates())
-            
-            if ordered_stops.empty:
-                print(f"No stops found for trip_id: {trip_id}")
-                return []
-                
-            return ordered_stops.to_dict('records')
-            
-        except Exception as e:
-            print(f"Error getting stops for trip_id {trip_id}: {str(e)}")
-            return []
-    
-    def get_stops_by_route_id(self, route_id):
-        relevant_trips = self.trips_df[self.trips_df['route_id'].astype(str) == route_id]
-        print(f"[DEBUG] RT: {relevant_trips}")
-
-        relevant_stop_times = self.stop_times_df[self.stop_times_df['trip_id'].astype(str) == route_id]
-
-        print(f"[DEBUG] RST: {relevant_trips}")
-
-
-        current_time = datetime.datetime.now()
-        current_time_str = current_time.strftime('%H:%M:%S')
-        print(f"[DEBUG]: Current time: {current_time_str}");
-
-        # Get active trips for the current time
-        active_trips = (relevant_stop_times[
-            (relevant_stop_times['departure_time'] <= current_time_str) & 
-            (relevant_stop_times['arrival_time'] >= current_time_str)
-        ])
-
-        # Get the first active trip_id
-        active_trip_id = active_trips['trip_id'].iloc[0]
-        print(f"[DEBUG]: selected active trip ID: {active_trip_id}");
-        print(f"[DEBUG]: All active trip ID: {active_trips['trip_id']}");
-
-        relevant_stop_times = self.stop_times_df[self.stop_times_df['trip_id'].isin(relevant_trips['trip_id'])]
-
-        ordered_stops = (relevant_stop_times[relevant_stop_times['trip_id'] == active_trip_id]
-                        .merge(self.stops_df, on='stop_id')
-                        .sort_values('stop_sequence')
-                        [['stop_name']]
-                        .drop_duplicates())
-
-        print(ordered_stops)
-        return ordered_stops.to_dict('records')
-
 config = AppConfig();
+notification = NotificationManager(notification_file=NOTIFICATION_LOG_FILE);
+
+def handle_api_errors(f):
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        try:
+            return f(*args, **kwargs)
+        except Exception as e:
+            logger.error(f"Error in API call: {str(e)}")
+            return jsonify({
+                'status': 'error',
+                'message': 'Internal server error',
+                'error': str(e)
+            }), 500
+    return wrapper
 
 class TCATBusAPI:
     @staticmethod
@@ -270,85 +128,53 @@ class TCATBusAPI:
         
         return updates
 
-
-
 # API Routes
-@app.route('/api/vehicles/<route_id>', methods=['GET'])
+@app.route('/api/v1/vehicles/<route_id>', methods=['GET'])
+@handle_api_errors
 def get_vehicles(route_id):
-    try:
-        vehicles = TCATBusAPI.get_vehicle_positions(route_id)
-        return jsonify({
-            'status': 'success',
-            'data': vehicles
-        })
-    except Exception as e:
-        return jsonify({
-            'status': 'error',
-            'message': str(e)
-        }), 500
+    return jsonify({
+        'status': 'success',
+        'data': TCATBusAPI.get_vehicle_positions(route_id)
+    })
 
-@app.route('/submit', methods=['POST'])
-def submit():
-    try:
-        data = request.get_json()
+@app.route('/api/v1/notification', methods=['POST'])
+@handle_api_errors
+def submit_notification():
+    data = request.get_json()
         
-        email = data.get('email')
-        stop = data.get('stop')
-        route = data.get('route')
+    email = data.get('email')
+    stop = data.get('stop')
+    route = data.get('route')
         
-        # Validate required fields
-        if not all([email, stop, route]):
-            return jsonify({
-                'error': 'Missing required fields'
-            }), 400
+    if not all([email, stop, route]):
+        return jsonify({
+            'error': 'Missing required fields'
+        }), 400
             
-        # Here you can add your logic to process the data
-        # For example, save to database or send notifications
-        save_route_data(email, stop, route)
-        return jsonify({
-            'message': 'Notification settings saved successfully',
-            'data': {
-                'email': email,
-                'stop': stop,
-                'route': route
-            }
-        }), 200
-        
-    except Exception as e:
-        return jsonify({
-            'error': str(e)
-        }), 500
+    notification.save_route_notification(email, stop, route)
 
-@app.route('/api/trips', methods=['GET'])
-def get_trips():
-    try:
-        trips = TCATBusAPI.get_trip_updates()
-        return jsonify({
-            'status': 'success',
-            'data': trips
-        })
-    except Exception as e:
-        return jsonify({
-            'status': 'error',
-            'message': str(e)
-        }), 500
+    return jsonify({
+        'message': 'Notification settings saved successfully',
+    }), 201
 
-@app.route('/api/v2/stops/<route_id>', methods=['GET'])
+@app.route('/api/v1/stops/<route_id>', methods=['GET'])
+@handle_api_errors
 def get_stops2(route_id):
-    print(f"extracting stops for :{route_id}");
+    logger.debug(f"Extracting stops for: {route_id}");
     vehicles = TCATBusAPI.get_vehicle_positions(route_id)
+
     if not vehicles:
         return jsonify ({
-            'status': 'success',
+            'status': f'No Running Vehicles for Route: {route_id}',
             'data': [],
             'vehicles': []
         }); 
 
-    ans = config.get_stops_by_trip_id(vehicles[0]['trip_id'])
-    
-    incoming_stops = [v['incoming_stop'] for v in vehicles]
     res = []
-    for stop in ans: 
+
+    incoming_stops = [v['incoming_stop'] for v in vehicles]
+
+    for stop in config.get_stops_by_trip_id(vehicles[0]['trip_id']): 
         res.append({
             "stop_name": stop['stop_name'],
             "is_incoming": stop['stop_name'] in incoming_stops
@@ -362,50 +188,12 @@ def get_stops2(route_id):
             'vehicles': vehicles
     })
 
-
-@app.route('/api/stops/<route_id>', methods=['GET'])
-def get_stops(route_id):
-    try:
-        # Get vehicle positions from TCATBusAPI
-        vehicles = TCATBusAPI.get_vehicle_positions(route_id)
-        
-        # Get list of incoming stops from vehicles
-        incoming_stops = [v['incoming_stop'] for v in vehicles]
-        
-        # Get unique vehicle IDs for active buses count
-        active_buses = len({v['vehicle_id'] for v in vehicles})
-
-        # Read and process stops
-        stops_file = os.path.join('tcat-ny-us', f'route_{route_id}.txt')
-        with open(stops_file, 'r') as file:
-            stops = []
-            for line in file:
-                stop_name = line.strip()
-                stops.append({
-                    'name': stop_name,
-                    'is_incoming': stop_name in incoming_stops
-                })
-
-        return jsonify({
-            'status': 'success',
-            'data': {
-                'vehicles': vehicles,
-                'stops': stops,
-                'active_buses': active_buses
-            }
-        })
-    except Exception as e:
-        return jsonify({
-            'status': 'error',
-            'message': str(e)
-        }), 500
-
 @scheduler.task('cron', id='read_csv_task', minute='*')
 def scheduled_task():
     with app.app_context():
-        for route in [30]:
+        for route in ROUTES:
             vehicles = TCATBusAPI.get_vehicle_positions(route);
-            read_csv_file(vehicles)
+            notification.process_notifications(vehicles)
 
 
 @app.route('/')
@@ -421,7 +209,7 @@ def not_found(error):
     }), 404
 
 @app.errorhandler(500)
-def server_error(error):
+def server_error(_):
     return jsonify({
         'status': 'error',
         'message': 'Internal server error'
