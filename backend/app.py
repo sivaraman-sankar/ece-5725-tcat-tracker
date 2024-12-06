@@ -17,8 +17,8 @@ from sendgrid.helpers.mail import Mail, Email, To, Content
 
 app = Flask(__name__,
     static_url_path='',
-    static_folder='../../frontend/build',
-    template_folder='../../frontend/build'
+    static_folder='../frontend/build',
+    template_folder='../frontend/build'
 )
 
 scheduler = APScheduler()
