@@ -15,7 +15,7 @@ function StopsViewer() {
     if (!routeId) return;
 
     setStatus('Fetching stops...');
-    const apiUrl = `/api/v2/stops/${routeId}`;
+    const apiUrl = `/api/v1/stops/${routeId}`;
 
     try {
       const response = await fetch(apiUrl);

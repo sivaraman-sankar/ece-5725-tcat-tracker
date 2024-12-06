@@ -1,6 +1,4 @@
 from functools import wraps
-from backend.helpers.app_config import AppConfig
-from backend.helpers.notification_manager import NotificationManager
 from flask import Flask, jsonify, render_template, request
 from google.transit import gtfs_realtime_pb2
 import requests
@@ -8,13 +6,12 @@ import urllib3
 from flask_cors import CORS; 
 import os 
 import pandas as pd
-import datetime
 from flask_apscheduler import APScheduler
-import csv
 from dotenv import load_dotenv
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail, Email, To
 import logging
+
+from app_config import AppConfig
+from notification_manager import NotificationManager
 
 logger = logging.getLogger(__name__)
 
