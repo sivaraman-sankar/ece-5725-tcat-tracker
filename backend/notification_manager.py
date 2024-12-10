@@ -4,22 +4,23 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, To
 from typing import List, Dict
 import logging
-import os 
+import os
 from dotenv import load_dotenv
-
+from datetime import datetime, timedelta
 
 load_dotenv()
 SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 FROM_EMAIL = os.getenv('FROM_EMAIL')
 
 class NotificationManager:
-    def __init__(self, notification_file: str):
+    def __init__(self, notification_file: str, rate_limit_minutes: int = 5):
         self.notification_file = notification_file
+        self.rate_limit_minutes = rate_limit_minutes
         self.logger = self._setup_logger()
         self.from_email = FROM_EMAIL
         self.sg_client = SendGridAPIClient(SENDGRID_API_KEY)
+        self.last_sent = {}  # Dictionary to track last sent time
         print("NOTIFICATION MODULE SET")
-
 
     def _setup_logger(self) -> logging.Logger:
         logger = logging.getLogger(__name__)
@@ -55,8 +56,25 @@ class NotificationManager:
             self.logger.error(f"Error saving notification: {str(e)}")
             return False
 
+    def _can_send_notification(self, email: str, stop: str, route: str) -> bool:
+        """Check if a notification can be sent based on the rate limit."""
+        key = (email, stop, route)
+        now = datetime.now()
+        if key in self.last_sent:
+            last_sent_time = self.last_sent[key]
+            if now - last_sent_time < timedelta(minutes=self.rate_limit_minutes):
+                self.logger.info(f"Rate limited: Notification for {key} skipped.")
+                return False
+        self.last_sent[key] = now
+        return True
+
     def _send_notification(self, subscriber: Dict) -> bool:
         try:
+            if not self._can_send_notification(
+                subscriber['email'], subscriber['stop'], subscriber['route']
+            ):
+                return False
+
             message = Mail(
                 from_email=Email(self.from_email),
                 to_emails=To(subscriber['email']),
