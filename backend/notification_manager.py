@@ -78,7 +78,6 @@ class NotificationManager:
 
     def process_notifications(self, vehicles: List[Dict]) -> None:
         try:
-            print("Processing notification")
             with open(self.notification_file, 'r') as file:
                 csv_reader = csv.DictReader(file)
                 candidates = []
