@@ -18,6 +18,7 @@ class NotificationManager:
         self.logger = self._setup_logger()
         self.from_email = FROM_EMAIL
         self.sg_client = SendGridAPIClient(SENDGRID_API_KEY)
+        print("NOTIFICATION MODULE SET")
 
 
     def _setup_logger(self) -> logging.Logger:
@@ -77,6 +78,7 @@ class NotificationManager:
 
     def process_notifications(self, vehicles: List[Dict]) -> None:
         try:
+            print("Processing notification")
             with open(self.notification_file, 'r') as file:
                 csv_reader = csv.DictReader(file)
                 candidates = []
@@ -88,6 +90,7 @@ class NotificationManager:
                             candidates.append(subscriber)
                 
                 for candidate in candidates:
+                    print(f"candidate: {candidate}")
                     self._send_notification(candidate)
                     
         except Exception as e:
