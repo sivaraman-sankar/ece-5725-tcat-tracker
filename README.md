@@ -27,6 +27,10 @@ To view logs
 ![WhatsApp Image 2024-12-10 at 14 38 32](https://github.com/user-attachments/assets/e6fe1329-9b82-48c0-8540-747fb0054644)
 ![WhatsApp Image 2024-12-10 at 14 38 32 (1)](https://github.com/user-attachments/assets/338a63b8-834f-45eb-b953-93b7281268a8)
 
+### Notification support with on screen keyboard
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/3cac4b07-3944-4fac-aaa6-4e1c4ae84355">
+
+
 # working demo video (requires cornell netid access)
 
 - https://drive.google.com/file/d/1EexffGljyLN1diIFRaSe8hY7eQZBvfOS/view?usp=sharing
