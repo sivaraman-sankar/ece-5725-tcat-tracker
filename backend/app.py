@@ -1,10 +1,10 @@
 from functools import wraps
-from flask import Flask, jsonify, render_template, request
-from google.transit import gtfs_realtime_pb2
 import requests
 import urllib3
-from flask_cors import CORS; 
 import os 
+from flask import Flask, jsonify, render_template, request
+from google.transit import gtfs_realtime_pb2
+from flask_cors import CORS; 
 import pandas as pd
 from flask_apscheduler import APScheduler
 from dotenv import load_dotenv
@@ -162,7 +162,7 @@ def get_stops2(route_id):
 
     if not vehicles:
         return jsonify ({
-            'status': f'No Running Vehicles for Route: {route_id}',
+            'status': f'success',
             'data': [],
             'vehicles': []
         }); 
@@ -200,13 +200,15 @@ def serve_react():
 # Error Handlers
 @app.errorhandler(404)
 def not_found(error):
+    logger.debug(error)
     return jsonify({
         'status': 'error',
         'message': 'Resource not found'
     }), 404
 
 @app.errorhandler(500)
-def server_error(_):
+def server_error(error):
+    logger.debug(error)
     return jsonify({
         'status': 'error',
         'message': 'Internal server error'

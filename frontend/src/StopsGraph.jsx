@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Stage, Layer, Line, Rect, Text } from "react-konva";
 const POINTS_PER_LINE = 5;
 
-const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
+const StopsViewerGraph = ({ numPoints = 30, stops = [] }) => {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth * 0.9, // Use 90% of viewport width
     height: window.innerHeight * 0.6 // Use 60% of viewport height
@@ -26,9 +26,6 @@ const StopsViewerGraph = ({ numPoints = 30, stops = [], busLocation = [] }) => {
     return text.split(' ').join('\n');
   }
 
-  const getIsIncoming = (stop) => {
-    return busLocation.some((location) => location.includes(stop));
-  };
 
   const getStopColor = (stops, lineIndex, pointIndex) => {
     const stop = getStop(stops, lineIndex, pointIndex);
