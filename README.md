@@ -17,8 +17,12 @@ To view logs
 # Protoype
 ## pictures 
 
-![WhatsApp Image 2024-12-10 at 14 38 32 (2)](https://github.com/user-attachments/assets/4956008b-3e35-4335-b4d9-a9578fcb584a)
-![WhatsApp Image 2024-12-10 at 14 39 47](https://github.com/user-attachments/assets/9542c3cf-81f6-48be-9474-680b3eb9e958)
+### PiTFT display (kiosk mode)
+  
+![WhatsApp Image 2024-12-10 at 14 49 47 (1)](https://github.com/user-attachments/assets/311c2e82-2653-4c82-8115-5a87ecf87d71)
+![WhatsApp Image 2024-12-10 at 14 49 47](https://github.com/user-attachments/assets/e7716092-3d40-452d-a114-b338b13a8337)
+
+### multiple device resolution:
 ![WhatsApp Image 2024-12-10 at 14 38 31](https://github.com/user-attachments/assets/dd327cda-3997-4350-babf-75f03cfbee24)
 ![WhatsApp Image 2024-12-10 at 14 38 32](https://github.com/user-attachments/assets/e6fe1329-9b82-48c0-8540-747fb0054644)
 ![WhatsApp Image 2024-12-10 at 14 38 32 (1)](https://github.com/user-attachments/assets/338a63b8-834f-45eb-b953-93b7281268a8)
