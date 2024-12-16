@@ -70,6 +70,12 @@ class NotificationManager:
 
     def _send_notification(self, subscriber: Dict) -> bool:
         try:
+            if not SENDGRID_API_KEY:
+                raise ValueError("SendGrid API key is required. Please check the documentation")
+            
+            if not FROM_EMAIL:
+                raise ValueError("Sender email is required. Please check the documentation")
+
             if not self._can_send_notification(
                 subscriber['email'], subscriber['stop'], subscriber['route']
             ):
