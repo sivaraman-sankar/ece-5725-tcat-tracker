@@ -113,7 +113,7 @@ class NotificationManager:
                             candidates.append(subscriber)
                 
                 for candidate in candidates:
-                    print(f"candidate: {candidate}")
+                    # print(f"candidate: {candidate}")
                     self._send_notification(candidate)
                     
         except Exception as e:

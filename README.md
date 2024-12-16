@@ -1,114 +1,120 @@
 # TCAT Tracker
 
-A real-time bus tracking system for TCAT (Tompkins Consolidated Area Transit) built with Flask and React.js.
+## 1. Introduction
+TCAT Tracker is a real-time bus tracking system for Tompkins Consolidated Area Transit, designed to run on a Raspberry Pi server. The system provides live bus location updates, route visualization, and email notifications.
 
-## Features
+### Tech Stack
+- **Frontend**: React.js, onsenui
+- **Backend**: Flask (Python)
+- **Hardware**: Raspberry Pi 4 Model B
+- **Display**: PiTFT 3.5" resistive touch screen
+- **Email Service**: SendGrid API
 
-- Real-time bus tracking
+### Key Features
+- Real-time bus tracking using TCAT's public API
+- Interactive route visualization with stop selection
 - Email notifications for bus arrivals
-- Interactive route visualization
 - Mobile-responsive design
-- Kiosk mode support along with PiTFT display
+- Kiosk mode optimized for PiTFT display
+- Server deployment on Raspberry Pi
 
-## Quick Start
-
-### Demo Mode
-
-```bash
-cd /home/pi
-./start_server.sh
-./cmd.sh
-
-# View logs
-tail -f backend/output.log
-```
-
-## Development Setup
+## 2. Setup
 
 ### Backend Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sivaraman-sankar/ece-5725-tcat-tracker.git
+   cd ece-5725-tcat-tracker
+   ```
 
-1. Create and activate virtual environment
+2. Create virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+3. Install dependencies:
+   ```bash
+   pip install -r backend/requirements.txt
+   ```
 
-2. Install dependencies
+4. Launch the server:
+    ```bash
+    ./start_server.sh
+    ```
 
-```bash
-pip install -r requirements.txt
-```
+5. Visit `http://<your_ip>:5000` to view the website
 
-3. Launch server
+### Optional Setup
 
-```bash
-python app.py
-# Server runs on port 5000
-```
+#### SendGrid Configuration
+1. Create a SendGrid account
+2. Generate API key from SendGrid dashboard
+3. Create `.env` file:
+   ```
+   SENDGRID_API_KEY=your_api_key
+   FROM_EMAIL=your_email
+   ```
+
+#### PiTFT Display Setup
+
+1. Launch the website in kiosk mode:
+   ```bash
+   ./cmd.sh
+   ```
 
 ### Frontend Setup
+1. Install Node.js dependencies:
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-1. Install Node.js and npm
-2. Install dependencies and build
+2. Build the application:
+   ```bash
+   npm run build
+   ```
 
-```bash
-npm install
-npm run build
-```
+## 3. Demo
+- [System Overview and Features](https://drive.google.com/file/d/1EexffGljyLN1diIFRaSe8hY7eQZBvfOS/view?usp=sharing)
+- [PiTFT Integration Demo](https://drive.google.com/file/d/10gTdPnRN-oDLlZ8IlpzHvNlZ-8wBmv5t/view?usp=sharing)
 
-## Display Modes
+## 4. Debugging
 
-### PiTFT Kiosk Mode
+1. Server Issues:
+   ```bash
+   tail -f output.log
+   ```
 
-The application supports a dedicated kiosk mode optimized for PiTFT displays, featuring:
+2. Permission Errors:
+   ```bash
+   chmod 644 start_server.sh
+   chmod 644 cmd.sh
+   ```
 
-- Touch-screen interface
-- Responsive layout
-- On-screen keyboard for notifications
+3. Display Issues:
+   ```bash
+   ls /dev/fb*
+   sudo modprobe fb1
+   ```
 
-### Multi-Device Support
+4. Email Configuration:
+   - Verify SendGrid API key in .env
+   - Check server logs for email errors
+   - Verify FROM_EMAIL is authenticated
 
-- Responsive design that adapts to different screen sizes
-- Optimized for both mobile and desktop views
-- Support for various browser resolutions
+## 5. References
 
-## Features
+1. React.js - [React Documentation](https://reactjs.org/)
+2. Flask - [Flask Documentation](https://flask.palletsprojects.com/)
+3. SendGrid - [SendGrid API Documentation](https://docs.sendgrid.com/)
+4. Raspberry Pi - [Official Documentation](https://www.raspberrypi.org/documentation/)
+5. PiTFT Setup - [Adafruit PiTFT Guide](https://learn.adafruit.com/adafruit-pitft-3-dot-5-touch-screen-for-raspberry-pi)
+6. Material-UI - [Official Documentation](https://material-ui.com/)
+7. TCAT API - [TCAT Developer Resources](https://www.tcatbus.com/developers)
+8. Python Virtual Environment - [Python venv](https://docs.python.org/3/library/venv.html)
 
-### Notification System
+## 6. License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-- Email alerts for bus arrivals
-- On-screen keyboard integration
-- Real-time status updates
-
-### Interactive Interface
-
-- Live route visualization
-- Stop selection with typeahead
-- Real-time tracking updates
-
-## Project Structure
-
-```
-├── backend/
-│   ├── app.py                 # Main server entry point
-│   ├── app_config.py          # Configuration management
-│   ├── notification_manager.py # Email notification system
-│   └── requirements.txt       # Python dependencies
-├── frontend/
-│   ├── src/
-│   │   ├── App.js            # Main React component
-│   │   ├── StopsViewer.js    # Route visualization
-│   │   └── stops.js          # Stop data management
-│   └── package.json          # Node.js dependencies
-└── README.md                 # Project documentation
-```
-
-## Documentation
-
-- [Demo Video 1](https://drive.google.com/file/d/1EexffGljyLN1diIFRaSe8hY7eQZBvfOS/view?usp=sharing) (Requires Cornell NetID)
-- [Demo Video 2](https://drive.google.com/file/d/10gTdPnRN-oDLlZ8IlpzHvNlZ-8wBmv5t/view?usp=sharing) (Requires Cornell NetID)
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Feel free to use, modify, and distribute this software according to the terms of the MIT License.
