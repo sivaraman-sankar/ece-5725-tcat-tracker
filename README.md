@@ -8,7 +8,7 @@ A real-time bus tracking system for TCAT (Tompkins Consolidated Area Transit) bu
 - Email notifications for bus arrivals
 - Interactive route visualization
 - Mobile-responsive design
-- Kiosk mode support for PiTFT display
+- Kiosk mode support along with PiTFT display
 
 ## Quick Start
 
