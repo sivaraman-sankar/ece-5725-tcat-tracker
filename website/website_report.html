@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>TCAT Tracker</title>
+
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">TCAT Tracker</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#obj">Project Objective</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#drawings">Drawings</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#result">Result</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    More <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#work-distribution">Work Distribution</a></li>
+                    <li><a href="#parts-list">Parts List</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#code-appendix">Code Appendix</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="starter-template">
+      <h1>TCAT Tracker</h1>
+      <p class="lead">A comprehensive solution to improve TCAT transit experience for Cornellians.</p>
+      By Sivaraman Sankar,
+      Ao
+      Ruan, Ivan Huang
+    </div>
+
+    <hr id="intro">
+
+    <div class="center-block">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yYQggbEqoBk" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+      <h4 style="text-align:center;">Demonstration Video</h4>
+    </div>
+
+    <hr id="obj">
+
+    <div style="text-align:center;">
+      <h2>Introduction</h2>
+      <p style="text-align: left;padding: 0px 30px;">
+        TCAT Tracker is a real-time bus tracking and notification application designed to enhance the commuting
+        experience for Cornell University students and Ithaca residents. By leveraging backend APIs and a dynamic
+        frontend interface, it provides real-time tracking for high-demand routes—30, 81, 90, and 10—that are essential
+        for student mobility.
+      </p>
+      <p style="text-align: left;padding: 0px 30px;">
+
+        Key features include <b>real-time bus location updates</b> and <b>email notifications</b> for arrival times at
+        selected stops,
+        ensuring users stay informed and prepared. The system addresses common challenges in bus tracking, improving
+        reliability, accessibility, and overall convenience for public transit users.
+      </p>
+      <p style="text-align: left;padding: 0px 30px;"><strong>The entire application is hosted as a standalone
+          application on the Raspberry Pi device.</strong> During the demo, we showcased that it is accessible from any
+        device within the RedRover network.</p>
+    </div>
+
+    <hr id="objective">
+
+
+    <div class="row">
+      <div class="col-md-12" style="text-align:center;" style="font-size:18px;">
+        <h2>Project Objective</h2>
+        <p style="text-align: left;padding: 0px 30px;">
+          The project's aim is to develop an integrated, user-friendly system for tracking buses in real-time and
+          notifying
+          users about bus arrivals. The focus was on using Raspberry Pi as a standalone webserver and using modular
+          architecture to build a light weight website
+        <ul style="text-align: left;padding: 0px 50px;">
+          <li><b>Real-Time Tracking:</b> Display bus locations along routes frequently used by Cornell students.</li>
+          <li><b>Email Notifications:</b> Provide timely arrival notifications for selected stops and routes.</li>
+          <li><b>User-Friendly Interface:</b> Create an intuitive frontend to allow easy route selection and
+            interaction.</li>
+          <li><b>Periodic Refreshing:</b> Ensure the system refreshes every ten seconds for accurate real-time updates.
+          </li>
+          <li><b>Scalability:</b> Design the system to easily support additional routes and features, such as predictive
+            analytics.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr id="design">
+
+    <div class="container mt-5" style="text-align:center;">
+      <h2>Design</h2>
+
+      <p class="lefty"> TCAT Tracker follows a client-server architecture, it comprises of two main modules: Backend
+        (representing the server) and Frontend (representing the client)</p>
+      <p class="lefty">The two systems interact with each other using APIs exposed by the Backend</p>
+      <div class="fig">
+        <img src="pics/architecture.png" alt="High level architecture of TCAT tracker">
+        <figcaption>Figure 1: High level Design of TCAT Tracker</figcaption>
+      </div>
+
+      <h4 class="lefty">Backend Design</h4>
+      <p style="text-align: left;padding: 0px 30px;">
+        The backend is the foundation of the TCAT Bus Tracking System, designed to process
+        real-time data, manage user preferences, and handle notifications. It consists of multiple integrated
+        components:
+      </p>
+      <ul style="text-align: left;padding: 0px 50px;">
+        <li>
+          <b>API Integration:</b> The backend connects to Ithaca's TCAT <b>GTFS real-time</b> feeds to fetch live bus
+          data, such as vehicle positions and trip updates. Static GTFS files (<code>trips.txt</code>,
+          <code>stops.txt</code>, and <code>stop_times.txt</code>) are used for supplementary information about stops
+          and routes.
+          <ul style="text-align: left;padding: 0px 30px;">
+            <li>
+              Subscribes to local TCAT APIs for dynamic vehicle and route data.
+            </li>
+            <li>
+              Processes static files for structured stop and trip information.
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <b>Notification System:</b> The notification module saves user preferences (email, stop, and route) and
+          matches real-time bus data to trigger alerts.
+          <ul style="text-align: left;padding: 0px 30px;">
+            <li>
+              Sends alerts through the SendGrid API, ensuring personalized and timely notifications. </li>
+            </ls>
+            <li>
+              Processes real-time data to notify users when a bus is approaching their selected stop.
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <b>Scheduler:</b> A periodic scheduler refreshes real-time data and evaluates notification criteria. It
+          ensures buses on critical routes (30, 81, 90, 10) are continuously monitored, and notifications are sent
+          promptly.
+          <ul style="text-align: left;padding: 0px 30px;">
+            <li>
+              Executes tasks every minute for continuous tracking and updates.
+            </li>
+            <li>
+              Ensures scalability to handle additional routes and notification tasks.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <h4 class="lefty">Frontend Design</h4>
+      <p style="text-align: left;padding: 0px 30px;">
+        The frontend provides an interactive platform where users can visualize bus routes and
+        manage notifications. It is developed using React and consists of the following key components:
+      </p>
+      <ul style="text-align: left;padding: 0px 50px;">
+        <li>
+          <b>Visualization Components:</b> The frontend renders bus routes, stops, and real-time vehicle positions
+          dynamically. These components ensure users can track buses efficiently.
+          <ul style="text-align: left;padding: 0px 30px;">
+            <li>
+              <code>StopsViewer.jsx</code>: Displays a list of stops along a route, highlighting the next incoming stop.
+            </li>
+            <li>
+              <code>StopsGraph.jsx</code>: Provides a graphical representation of the route and the current bus
+              location.
+            </li>
+          </ul>
+        </li>
+        <br>
+
+        <li>
+          <b>User Interaction:</b> The frontend enables users to interact with the system through intuitive components.
+          These include dropdowns to select routes and buttons to set notification preferences.
+          <ul style="text-align: left;padding: 0px 30px;">
+            <li>
+              <code>NotificationButton.jsx</code>: Allows users to register for email alerts with inputs for route,
+              stop, and email address.
+            </li>
+            <li>
+              Dropdown selectors and refresh features improve the usability of route tracking.
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <b>Performance Optimization:</b> The frontend is optimized to handle frequent updates without compromising
+          responsiveness or user experience.
+          <ul style="text-align: left;padding: 0px 30px;">
+            <li>
+              Data refreshes every five seconds using React state management.
+            </li>
+            <li>
+              Styles defined in <code>App.css</code> and <code>StopsViewer.css</code> ensure a visually appealing and
+              responsive design.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <hr id="drawings">
+
+    <div class="container mt-5" style="text-align:center;">
+      <h2>Drawings</h2>
+      <h4 class="lefty">Data Flow Diagram:</h4>
+      <p class="lefty">Data flows seamlessly from the TCAT API and GTFS files to the backend, where it is
+        processed and sent to the frontend for rendering. User notification preferences are stored and evaluated in
+        conjunction with live data to trigger email alerts.
+      </p>
+      <div style="padding-bottom: 5rem">
+
+        <div class="flowchart-container">
+          <div class="box">TCAT data</div>
+          <div class="arrow">→</div>
+          <div class="box">Backend APIs</div>
+          <div class="arrow">→</div>
+          <div class="box-red">Frontend rendering & Notifications</div>
+        </div>
+        <div class="flowchart-container">
+          <div class="box">User inputs</div>
+          <div class="arrow">→</div>
+          <div class="box">Backend processing</div>
+          <div class="arrow">→</div>
+          <div class="box-red">Alerts and updates</div>
+        </div>
+      </div>
+
+      <figure>
+        <img class="img" src="pics/ChartsForDrawing.png" alt="Generic placeholder image"
+          style="width:40%; display:block; margin: 0 auto;">
+        <figcaption>Figure 2: Data flow diagram for TCAT Tracker</figcaption>
+      </figure>
+      <br>
+      <h4 class="lefty">Frontend Visualization:</h4>
+
+      <p class="lefty">
+        Graphical displays of bus routes and stops are designed to offer users clarity
+        on bus positions and their proximity to specific stops.
+      </p>
+
+      <ul class="lefty" style="padding-left: 5rem;">
+        <li>
+          Routes are displayed with clear markers for stops.
+        </li>
+        <li>
+          Incoming stops are highlighted, providing real-time updates.
+        </li>
+        <li>
+          Incoming stop is represented in Blue and Red if there is no bus. (Figure 3)
+        </li>
+
+
+      </ul>
+      <div class="fig">
+        <img src="pics/visualization.png" alt="visualization of bus stop">
+        <figcaption> Figure 3: Screengrab illustrating the various kinds of stop</figcaption>
+      </div>
+    </div>
+
+    <hr id="testing">
+
+    <div class="container mt-5" style="text-align:center;">
+      <h2>Testing</h2>
+      <p style="text-align: left;padding: 0px 30px;">
+        The testing phase validated the system’s robustness, ensuring each component worked independently and
+        cohesively.
+      <ul style="text-align: left;padding: 0px 50px;">
+        <li>
+          <b>Backend Testing:</b> API endpoints were tested for reliability and correctness using Postman and Python
+          scripts. Notification functionality was validated with mock email scenarios to ensure timely delivery and
+          proper formatting.
+          <ul style="text-align: left;padding: 0px 50px;">
+            <li>
+              API endpoints were tested for accuracy and response time using tools like Postman.
+            </li>
+            <li>
+              Notification delivery was validated through mock scenarios with SendGrid.
+            </li>
+            <li>
+              <b>Endpoints Tested:</b>
+              <ul style="text-align: left;padding: 0px 50px;">
+                <li>
+                  <code>/api/v1/vehicles/route_id</code>: Fetches real-time vehicle data.
+                </li>
+                <li>
+                  <code>/api/v1/notification</code>: Processes user preferences and triggers notifications.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <br>
+        <br>
+
+        <li>
+          <b>Frontend Testing:</b> Components like <code>StopsViewer.jsx</code> and <code>NotificationButton.jsx</code>
+          were tested for rendering correctness and interactivity.
+          <ul style="text-align: left;padding: 0px 50px;">
+            <li>
+              React components, such as <code>StopsViewer</code> and <code>NotificationButton</code>, were tested for
+              rendering and functionality. </li>
+          </ul>
+        </li>
+        <br>
+        <br>
+
+        <li>
+          <b>Integration Testing:</b>
+          <ul style="text-align: left;padding: 0px 50px;">
+            <li>
+              The frontend and backend were tested together, verifying seamless data flow and consistent real-time
+              updates.
+            </li>
+          </ul>
+        </li>
+
+
+
+      </ul>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <figure>
+            <img src="pics/mac.jpg" alt="Website testing on Mac" class="img-responsive">
+            <figcaption>Figure 4: Website Works Well in Mac During Testing</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <figure>
+            <img src="pics/ipad.jpg" alt="Website testing on iPad" class="img-responsive">
+            <figcaption>Figure 5: Testing Website on Other Devices (iPad)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <hr id="result">
+    <div class="container mt-5">
+      <div style="text-align:center;">
+        <h2>Result</h2>
+        <p style="text-align: left;padding: 0px 30px;">
+          The TCAT Bus Tracking and Notification System met all primary objectives, delivering a fully functional and
+          user-friendly solution. Key results include:
+        </p>
+        <ul style="text-align: left;padding: 10px 50px;">
+          <li><b>Real-Time Visualization:</b> Bus routes 30, 81, 90, and 10 were successfully visualized with updates
+            every five seconds.</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <figure>
+              <img class="img" src="pics/TFTRoute10.jpg" alt="Route 10 bus tracking visualization">
+              <figcaption>Figure 6: Route 10 Tracking</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure>
+              <img class="img" src="pics/TFTRoute30.jpg" alt="Route 30 bus tracking visualization">
+              <figcaption>Figure 7: Route 30 Tracking</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <ul style="text-align: left;padding: 10px 50px;">
+          <li><b>Notification Success:</b> Notifications were sent accurately based on user preferences, with over 95%
+            delivery success in test cases using SendGrid.</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-md-6">
+            <figure>
+              <img class="img" src="pics/emailinput.png" alt="Email subscription input interface">
+              <figcaption>Figure 8: E-mail Input Panel</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure>
+              <img class="img" src="pics/email.png" alt="Example of notification email">
+              <figcaption>Figure 9: Sample Notification E-mail</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <ul style="text-align: left;padding: 10px 50px;">
+          <li><b>Performance Metrics:</b> Backend APIs responded within 200ms for most requests. Frontend maintained
+            smooth visual updates without significant latency.</li>
+          <li><b>Scalability:</b> The modular design enables easy addition of new routes or features like predictive
+            analytics and user authentication.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <hr id="conclusion">
+    <div class="container mt-5">
+      <div class="row" style="text-align: center;">
+        <h2>Conclusion</h2>
+        <p style="text-align: left;padding: 0px 30px;">
+          The TCAT Bus Tracking and Notification System is a comprehensive solution that seamlessly integrates backend
+          data processing with a dynamic frontend interface to enhance public transit accessibility for Cornell students
+          and the Ithaca community. By leveraging GTFS real-time feeds and static datasets, the system provides
+          accurate,
+          real-time visualization of bus routes frequently used by students, including routes 30, 81, 90, and 10. Its
+          modular architecture, featuring an intuitive React-based frontend and a robust Flask-powered backend, ensures
+          scalability, maintainability, and responsiveness.
+        </p>
+        <p style="text-align: left;padding: 0px 30px;">
+          The system's key functionalities—real-time bus tracking, email notifications, and route visualization—have
+          been
+          rigorously tested and validated to ensure reliability and user satisfaction. The inclusion of features such as
+          periodic data refreshes, intuitive user interaction components, and scalable scheduling mechanisms highlights
+          the thoughtful and efficient design of the system.
+        </p>
+        <p style="text-align: left;padding: 0px 30px;">
+          In achieving its objectives, the project delivers a user-friendly and reliable tool that addresses the
+          challenges of public transportation tracking. It lays a strong foundation for future enhancements, including
+          predictive analytics, mobile optimization, and additional user-focused features. Ultimately, the system
+          bridges
+          the gap between transit data and commuter convenience, significantly improving the public transportation
+          experience for its users.
+        </p>
+      </div>
+    </div>
+
+
+    <hr id="work-distribution">
+    <div class="container mt-5">
+      <div class="row" style="text-align:center;">
+        <h2>Work Distribution</h2>
+        <br>
+        <div class="col-md-4">
+          <img class="img-rounded" src="pics/Siva.jpg" alt="sivaraman-sankar">
+          <h4>Sivaraman Sankar</h4>
+          <p>ss4362@cornell.edu</p>
+
+          <ul>
+            <li style="text-align: justify;">
+              Developed an API codebase to interact with the GTFS API, enabling the retrieval of route metadata and
+              real-time bus location data.</li>
+            <li style="text-align: justify;">
+              Designed and implemented a responsive User Interface (UI) integrated with the backend to visualize bus
+              locations
+            </li>
+            <li style="text-align: justify;">
+              Configured the Raspberry Pi as a web server, set up local network accessibility for the website, and
+              created
+              startup scripts for streamlined management.
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <img class="img-rounded" src="pics/Andy.png" alt="ao-ruan">
+          <h4>Ao Ruan</h4>
+          <p>ar2546@cornell.edu</p>
+          <ul>
+            <li style="text-align: justify;">
+              Set up and configured the Raspberry Pi, including installing and launching Chromium to display
+              the webpage for real-time monitoring.
+            </li>
+            <li style="text-align: justify;">
+              Located the API endpoint and wrote basic code to test the bus location data.
+            </li>
+            <li style="text-align: justify;">
+              Participated in the final report website design.
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <img class="img-rounded" src="pics/ivanhuang.jpg" alt="Ivan-Huang" width="240" height="240">
+          <h4>Ivan Huang</h4>
+          <p>qh229@cornell.edu</p>
+          <ul>
+            <li style="text-align: justify;">
+              Brainstormed and refined the project idea, helped design the user interface layout focusing on intuitive
+              usability, including the structure for route display and navigation.
+            </li>
+            <li style="text-align: justify;">
+              Assisted in debugging and testing the system, troubleshooting both software and hardware issues.
+            </li>
+            <li style="text-align: justify;">
+              Documented the entire project, covering the design methodology, implementation details, and testing
+              results,
+              along with analysis and reflections.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <hr id="parts-list">
+    <div class="container mt-5">
+      <div class="row" style="text-align: center;">
+        <h2>Parts List</h2>
+        <br>
+        <div class="container" style="text-align: left;">
+          <table class="table table-hover table-bordered mt-4">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">Part</th>
+                <th scope="col">Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Raspberry Pi 4, 2G Ram</td>
+                <td>Provided</td>
+              </tr>
+              <tr>
+                <td>Capacitive piTFT</td>
+                <td>Provided</td>
+              </tr>
+              <tr>
+                <td>Raspberry Pi Case</td>
+                <td>Provided</td>
+              </tr>
+              <tr>
+                <td>1, 16G SD card for each team member</td>
+                <td>Provided</td>
+              </tr>
+              <tr>
+                <td>Raspberry Pi power supply</td>
+                <td>Provided</td>
+              </tr>
+              <tr>
+                <td><strong>Total</strong></td>
+                <td>0 (all components are provided in lab)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <hr id="references">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center mb-4">References</h2>
+          <div class="list-group">
+            <a href="https://www.britannica.com/technology/client-server-architecture" target="_blank"
+              class="list-group-item list-group-item-action">Client Server architecture</a>
+            <a href="https://aws.amazon.com/what-is/api/" target="_blank"
+              class="list-group-item list-group-item-action">APIs</a>
+            <a href="https://docs.python.org/3/" target="_blank" class="list-group-item list-group-item-action">Python
+              Documentation</a>
+            <a href="https://docs.sendgrid.com/" target="_blank" class="list-group-item list-group-item-action">SendGrid
+              API Documentation</a>
+            <a href="https://forums.raspberrypi.com/" target="_blank"
+              class="list-group-item list-group-item-action">Raspberry Pi Forums</a>
+            <a href="https://getbootstrap.com/" target="_blank" class="list-group-item list-group-item-action">Bootstrap
+              Documentation</a>
+            <a href="https://learn.adafruit.com/adafruit-pitft-28-inch-resistive-touchscreen-display-raspberry-pi"
+              target="_blank" class="list-group-item list-group-item-action">Adafruit Guide for PiTFT Setup</a>
+            <a href="https://pimylifeup.com" target="_blank" class="list-group-item list-group-item-action">Pi My Life
+              Up: Chromium on Raspberry Pi</a>
+            <a href="https://reactjs.org/" target="_blank" class="list-group-item list-group-item-action">React
+              Documentation</a>
+            <a href="https://realtimetcatbus.availtec.com/InfoPoint" target="_blank"
+              class="list-group-item list-group-item-action">Bus location information retrieved from InfoPoint</a>
+            <a href="https://sourceforge.net/p/raspberry-gpio-python/wiki/Home/" target="_blank"
+              class="list-group-item list-group-item-action">R-Pi GPIO Document</a>
+            <a href="https://wiki.archlinux.org/title/LightDM" target="_blank"
+              class="list-group-item list-group-item-action">Arch Linux Wiki - LightDM</a>
+            <a href="https://wiki.archlinux.org/title/Xinput" target="_blank"
+              class="list-group-item list-group-item-action">Arch Linux Wiki - xinput</a>
+            <a href="https://www.chromium.org" target="_blank" class="list-group-item list-group-item-action">Chromium
+              Project</a>
+            <a href="https://www.raspberrypi.com/documentation/computers/using.html#graphical-applications"
+              target="_blank" class="list-group-item list-group-item-action">Raspberry Pi Documentation - Graphical
+              Applications</a>
+            <a href="https://www.x.org/releases/X11R7.7/doc/man/man1/startx.1.xhtml" target="_blank"
+              class="list-group-item list-group-item-action">startx: X.Org Manual</a>
+            <a href="https://developers.google.com/transit/gtfs" target="_blank"
+              class="list-group-item list-group-item-action">GTFS Documentation</a>
+            <a href="https://flask.palletsprojects.com/" target="_blank"
+              class="list-group-item list-group-item-action">Flask Documentation</a>
+            <a href="https://docs.python-requests.org/en/latest/" target="_blank"
+              class="list-group-item list-group-item-action">Requests Library Documentation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <hr id="code-appendix">
+
+    <div class="container mt-5">
+      <br>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center mb-4">Code Appendix</h2>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between align-items-center">
+                <span>All code used to develop the TCAT Tracker has been uploaded to</span>
+                <a href="https://github.com/sivaraman-sankar/ece-5725-tcat-tracker/tree/develop" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-secondary btn-sm">
+                   TCAT Tracker Repository
+                </a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between align-items-center">
+                <span>The Code listing PDF can be found in canvas and can also be accessed at</span>
+                <a href="https://github.com/sivaraman-sankar/ece-5725-tcat-tracker/blob/develop/CodeListing_ece5725%20(1).pdf" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-secondary btn-sm">
+                   Code Listing
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
+    <hr>
+
+  </div><!-- /.container -->
+
+
+
+
+  <!-- Bootstrap core JavaScript
+      ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+
+</html>

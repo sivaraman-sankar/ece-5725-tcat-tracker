@@ -9,11 +9,13 @@ import pandas as pd
 from flask_apscheduler import APScheduler
 from dotenv import load_dotenv
 import logging
+from pathlib import Path
 
 from app_config import AppConfig
 from notification_manager import NotificationManager
 
 logger = logging.getLogger(__name__)
+BASE_DIR = Path(__file__).resolve().parent
 
 app = Flask(__name__,
     static_url_path='',
@@ -26,7 +28,7 @@ scheduler = APScheduler()
 load_dotenv()
 
 ROUTES = [30, 10, 90, 81]
-NOTIFICATION_LOG_FILE = 'routes.csv'
+NOTIFICATION_LOG_FILE = BASE_DIR / 'routes.csv'
 
 CORS(app); 
 
@@ -217,4 +219,4 @@ def server_error(error):
 if __name__ == '__main__':
     scheduler.init_app(app)
     scheduler.start()
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)
