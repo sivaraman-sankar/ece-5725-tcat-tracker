@@ -1,5 +1,5 @@
 body {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .starter-template {
@@ -10,8 +10,63 @@ body {
 hr { margin: 20px 0 20px 0; }
 
 .center-block {  
-    width:640px;
+  width:640px;
   display: block;  
   margin-right: auto;  
   margin-left: auto;  
 }  
+
+.lefty {
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.fig {
+    margin: 5rem;
+}
+
+img {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: auto;
+  min-width: 300px;
+}
+
+.flowchart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  padding: 15px;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.box-red {
+  padding: 15px;
+  background-color: rgb(237, 165, 198);
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 24px;
+  color: black;
+}
+
+.img-rounded {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
